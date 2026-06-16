@@ -1,0 +1,27 @@
+[0.213s] Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
+[1.782s] [ 50%] Built target imu_sync_node
+[1.888s] [100%] Built target imu_sync_component
+[1.926s] Invoked command in '/home/student/sensor_platform_ws/build/platform_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
+[2.168s] Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_processing
+[2.195s] -- Install configuration: "Release"
+[2.234s] -- Execute custom install script
+[2.369s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/lib/platform_processing/imu_sync_node
+[2.372s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/lib/libimu_sync_component.so
+[2.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/lib/platform_processing/mock_imu_node.py
+[2.495s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/package_run_dependencies/platform_processing
+[2.501s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/parent_prefix_path/platform_processing
+[2.503s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/ament_prefix_path.sh
+[2.504s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/ament_prefix_path.dsv
+[2.518s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/path.sh
+[2.518s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/path.dsv
+[2.520s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.bash
+[2.521s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.sh
+[2.521s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.zsh
+[2.534s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.dsv
+[2.535s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.dsv
+[2.548s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/packages/platform_processing
+[2.618s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/rclcpp_components/platform_processing
+[2.621s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/cmake/platform_processingConfig.cmake
+[2.621s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/cmake/platform_processingConfig-version.cmake
+[2.622s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.xml
+[2.650s] Invoked command in '/home/student/sensor_platform_ws/build/platform_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_processing

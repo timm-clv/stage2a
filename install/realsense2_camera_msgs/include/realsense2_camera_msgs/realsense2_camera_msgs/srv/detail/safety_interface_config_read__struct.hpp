@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/build/realsense2_camera_msgs/rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/safety_interface_config_read__struct.hpp

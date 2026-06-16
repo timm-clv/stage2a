@@ -1,0 +1,4 @@
+source;share/olive_networking/local_setup.bash
+source;share/olive_networking/local_setup.dsv
+source;share/olive_networking/local_setup.sh
+source;share/olive_networking/local_setup.zsh

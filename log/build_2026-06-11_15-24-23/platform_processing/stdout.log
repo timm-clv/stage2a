@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target imu_sync_component[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
+[ 75%] Built target imu_sync_node

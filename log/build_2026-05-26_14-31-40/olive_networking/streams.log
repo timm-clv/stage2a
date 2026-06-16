@@ -1,0 +1,23 @@
+[0.039s] Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8
+[0.103s] Invoked command in '/home/student/sensor_platform_ws/build/olive_networking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8
+[0.103s] Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/olive_networking
+[0.136s] -- Install configuration: "Release"
+[0.136s] -- Execute custom install script
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/lib/olive_networking/scripts/olive_network_configuration.sh
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/udev/99-olive-networking.rules
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/package_run_dependencies/olive_networking
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/parent_prefix_path/olive_networking
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/ament_prefix_path.sh
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/ament_prefix_path.dsv
+[0.136s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/path.sh
+[0.137s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/path.dsv
+[0.137s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.bash
+[0.137s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.sh
+[0.137s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.zsh
+[0.137s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.dsv
+[0.137s] -- Symlinking: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.dsv
+[0.148s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/packages/olive_networking
+[0.148s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/cmake/olive_networkingConfig.cmake
+[0.148s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/cmake/olive_networkingConfig-version.cmake
+[0.148s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.xml
+[0.175s] Invoked command in '/home/student/sensor_platform_ws/build/olive_networking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/olive_networking

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/sensor_platform_ws/build/uavcan_bridge/libdronecan_bridge_component.so" "TARGETS" "dronecan_bridge_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

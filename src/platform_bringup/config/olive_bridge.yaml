@@ -1,0 +1,37 @@
+name: olive_camera_domain_bridge
+
+topics:
+  /olive/camera/olivecam/image/compressed:
+    type: sensor_msgs/msg/CompressedImage
+    from_domain: 3
+    to_domain: 0
+    qos:
+      reliability: best_effort
+      durability: volatile
+      history: keep_last
+      depth: 5
+
+  /olive/camera/olivecam/image/camera_info:
+    type: sensor_msgs/msg/CameraInfo
+    from_domain: 3
+    to_domain: 0
+
+  /olive/camera/olivecam/filtered_ahrs:
+    type: sensor_msgs/msg/Imu
+    from_domain: 3
+    to_domain: 0
+    
+  /olive/camera/olivecam/pose:
+    type: geometry_msgs/msg/PoseStamped
+    from_domain: 3
+    to_domain: 0
+
+  /olive/camera/olivecam/twist:
+    type: geometry_msgs/msg/TwistStamped
+    from_domain: 3
+    to_domain: 0
+    
+  /olive/camera/olivecam/linear_acc:
+    type: geometry_msgs/msg/AccelStamped
+    from_domain: 3
+    to_domain: 0

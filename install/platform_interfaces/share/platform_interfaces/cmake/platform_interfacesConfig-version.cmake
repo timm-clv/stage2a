@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/build/platform_interfaces/ament_cmake_core/platform_interfacesConfig-version.cmake

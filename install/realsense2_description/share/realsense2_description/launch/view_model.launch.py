@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_description/launch/view_model.launch.py

@@ -1,0 +1,7 @@
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In member function ‘[01m[Kvoid platform_processing::ImuSyncComponent::imuCallback(sensor_msgs::msg::Imu_<std::allocator<void> >::UniquePtr)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:180:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfused_msg[m[K’ was not declared in this scope
+  180 |     [01;31m[Kfused_msg[m[K.orientation_covariance[0] = var_ori_rp;
+      |     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/imu_sync_component.dir/build.make:76: CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/imu_sync_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

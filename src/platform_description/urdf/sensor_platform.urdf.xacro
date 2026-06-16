@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drone_sensor_platform">
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.48 0.03 0.03"/> 
+      </geometry>
+      <material name="alu_gray">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="jetson_link">
+    <visual>
+      <geometry>
+        <box size="0.103 0.0905 0.03477"/>
+      </geometry>
+      <material name="nvidia_green">
+        <color rgba="0.1 0.2 0.1 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_jetson" type="fixed">
+    <parent link="base_link"/>
+    <child link="jetson_link"/>
+    <origin xyz="0.04 0.0 0.032385" rpy="0 0 0"/> 
+  </joint>
+
+  <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 0.01"/>
+      </geometry>
+      <material name="dark_gray">
+        <color rgba="0.2 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_olive_imu" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0.17 0.0 0.02" rpy="0 0 1.571"/> 
+  </joint>
+
+  <link name="olivecam_link">
+    <visual>
+      <geometry>
+        <box size="0.038 0.038 0.024"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="0.8 0.8 0.8 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_olive_cam" type="fixed">
+    <parent link="base_link"/>
+    <child link="olivecam_link"/>
+    <origin xyz="-0.155 0.0 0.034" rpy="-1.571 1.571 0"/> 
+  </joint>
+
+  <link name="olivecam_optical_frame"/>
+  <joint name="olivecam_link_to_optical" type="fixed">
+    <parent link="olivecam_link"/>
+    <child link="olivecam_optical_frame"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="optical_flow_link">
+    <visual>
+      <geometry>
+        <box size="0.03 0.03 0.015"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_holybro_flow" type="fixed">
+    <parent link="base_link"/>
+    <child link="optical_flow_link"/>
+    <origin xyz="0.17 0.0 -0.0225" rpy="3.14159 0 1.5708"/> 
+  </joint>
+
+</robot>

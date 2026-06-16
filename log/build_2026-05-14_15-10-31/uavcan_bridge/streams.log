@@ -1,0 +1,65 @@
+[0.007s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(dronecan_env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(dronecan_env) /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[0.023s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.111s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.116s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.138s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.140s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.144s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.162s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.187s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.188s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.258s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.297s] -- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.312s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.322s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.335s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.394s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.394s] -- Configured cppcheck include dirs: /home/student/sensor_platform_ws/src/hardware/uavcan_bridge/include/libcanard
+[0.394s] -- Configured cppcheck exclude dirs and/or files: 
+[0.395s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.396s] -- Added test 'lint_cmake' to check CMake code style
+[0.397s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.400s] -- Added test 'uncrustify' to check C / C++ code style
+[0.400s] -- Configured uncrustify additional arguments: 
+[0.401s] -- Added test 'xmllint' to check XML markup files
+[0.402s] -- Configuring done
+[0.412s] -- Generating done
+[0.417s] -- Build files have been written to: /home/student/sensor_platform_ws/build/uavcan_bridge
+[0.435s] [35m[1mConsolidate compiler generated dependencies of target dronecan_bridge_node[0m
+[0.435s] [35m[1mConsolidate compiler generated dependencies of target dronecan_bridge_component[0m
+[0.446s] [ 60%] [32mBuilding CXX object CMakeFiles/dronecan_bridge_component.dir/src/dronecan_bridge_component.cpp.o[0m
+[0.446s] [ 60%] Built target dronecan_bridge_node
+[2.297s] In file included from [01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/src/dronecan_bridge_component.cpp:18[m[K:
+[2.297s] [01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/include/libcanard/canard.h:332:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids flexible array member ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.297s]   332 |     uint8_t [01;35m[Kdata[m[K[];
+[2.297s]       |             [01;35m[K^~~~[m[K
+[2.297s] [01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/include/libcanard/canard.h:369:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids flexible array member ‘[01m[Kbuffer_head[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.297s]   369 |     uint8_t [01;35m[Kbuffer_head[m[K[];
+[2.297s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[5.163s] [ 80%] [32m[1mLinking CXX shared library libdronecan_bridge_component.so[0m
+[5.249s] [100%] Built target dronecan_bridge_component
+[5.257s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(dronecan_env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(dronecan_env) /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[5.263s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(dronecan_env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(dronecan_env) /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge
+[5.267s] -- Install configuration: "Release"
+[5.268s] -- Execute custom install script
+[5.268s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/uavcan_bridge/dronecan_bridge_node
+[5.268s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/libdronecan_bridge_component.so
+[5.268s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/package_run_dependencies/uavcan_bridge
+[5.268s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/parent_prefix_path/uavcan_bridge
+[5.268s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.sh
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.dsv
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.sh
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.dsv
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.bash
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.sh
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.zsh
+[5.269s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.dsv
+[5.269s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.dsv
+[5.276s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/packages/uavcan_bridge
+[5.276s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/rclcpp_components/uavcan_bridge
+[5.276s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.276s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig.cmake
+[5.276s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig-version.cmake
+[5.277s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.xml
+[5.278s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(dronecan_env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(dronecan_env) /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge

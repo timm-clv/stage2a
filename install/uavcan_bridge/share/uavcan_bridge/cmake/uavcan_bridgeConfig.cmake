@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/build/uavcan_bridge/ament_cmake_core/uavcan_bridgeConfig.cmake

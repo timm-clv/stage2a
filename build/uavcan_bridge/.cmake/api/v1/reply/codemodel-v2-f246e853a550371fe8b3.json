@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-00a080057dbcd313df0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "uavcan_bridge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dronecan_bridge_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dronecan_bridge_component-86bdce380cf2dc80d056.json",
+					"name" : "dronecan_bridge_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dronecan_bridge_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dronecan_bridge_node-fdaab40bd81995d92b7a.json",
+					"name" : "dronecan_bridge_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uavcan_bridge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uavcan_bridge_uninstall-356cb8d613ed297ccc00.json",
+					"name" : "uavcan_bridge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-adddb3498918b654df9b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/student/sensor_platform_ws/build/uavcan_bridge",
+		"source" : "/home/student/sensor_platform_ws/src/hardware/uavcan_bridge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

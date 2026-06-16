@@ -1,0 +1,15 @@
+fusion_node:
+  ros__parameters:
+    base_link_frame: "base_link"
+    odom_frame: "odom"
+    publish_tf: true
+    use_retrodiction: true # CRITIQUE : Active le buffer temporel
+    
+    # Capteur principal 1
+    imu.topic: "/imu/fused"
+    # Capteur principal 2
+    odometry.topic: "/olive/camera/olivecam/twist_synced"
+    
+    # FusionCore gère nativement l'ajout de capteurs secondaires par index
+    imu2.topic: "/olive/camera/olivecam/filtered_ahrs_synced"
+    odometry2.topic: "/optical_flow/velocity"

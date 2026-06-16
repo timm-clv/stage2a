@@ -1,0 +1,431 @@
+[0.059s] Invoking command in '/home/student/sensor_platform_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/realsense2_camera_msgs
+[0.378s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.378s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.421s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.523s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.718s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.065s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.196s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.221s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[1.274s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.612s] -- Found ament_cmake_cppcheck: 0.12.15 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[2.683s] -- Found ament_cmake_cpplint: 0.12.15 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[2.688s] -- Found ament_cmake_uncrustify: 0.12.15 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[2.725s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.313s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.627s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.644s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.670s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.670s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.670s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.715s] -- Found ament_cmake_flake8: 0.12.15 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[3.715s] -- Found ament_cmake_pep257: 0.12.15 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[4.081s] -- Configuring done
+[5.609s] -- Generating done
+[5.650s] -- Build files have been written to: /home/student/sensor_platform_ws/build/realsense2_camera_msgs
+[5.694s] Invoked command in '/home/student/sensor_platform_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/realsense2_camera_msgs
+[5.699s] Invoking command in '/home/student/sensor_platform_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/realsense2_camera_msgs -- -j8 -l8
+[5.787s] [  1%] Built target realsense2_camera_msgs__rs
+[5.788s] [  1%] Built target realsense2_camera_msgs__cpp
+[5.794s] [  1%] Built target ament_cmake_python_symlink_realsense2_camera_msgs
+[5.873s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_cpp[0m
+[5.910s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_c[0m
+[5.927s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp[0m
+[5.928s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[5.942s] [ 13%] Built target realsense2_camera_msgs__rosidl_generator_c
+[5.945s] [ 49%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[5.945s] [ 49%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[5.945s] [ 49%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[6.006s] running egg_info
+[6.006s] writing realsense2_camera_msgs.egg-info/PKG-INFO
+[6.006s] writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt
+[6.006s] writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt
+[6.008s] reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[6.024s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c[0m
+[6.035s] [ 61%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[6.050s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c[0m
+[6.061s] [ 73%] Built target realsense2_camera_msgs__rosidl_typesupport_c
+[6.087s] writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[6.109s] [ 73%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg
+[6.118s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c[0m
+[6.136s] [ 85%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[6.152s] [ 85%] Built target realsense2_camera_msgs
+[6.170s] [ 86%] Built target realsense2_camera_msgs__py
+[6.276s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_py[0m
+[6.327s] [ 97%] Built target realsense2_camera_msgs__rosidl_generator_py
+[6.357s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c__pyext[0m
+[6.358s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[6.358s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[6.368s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[6.368s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext
+[6.368s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[6.378s] Invoked command in '/home/student/sensor_platform_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/realsense2_camera_msgs -- -j8 -l8
+[6.381s] Invoking command in '/home/student/sensor_platform_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/realsense2_camera_msgs
+[6.387s] -- Install configuration: "Release"
+[6.388s] -- Execute custom install script
+[6.388s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__functions.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__struct.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/triggered_calibration.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h
+[6.389s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h
+[6.390s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/application_config_read.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/application_config_write.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/calib_config_read.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/calib_config_write.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__functions.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__struct.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__type_support.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__functions.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__struct.h
+[6.391s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__type_support.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__functions.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__struct.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__functions.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__struct.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h
+[6.392s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__functions.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__struct.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__functions.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__struct.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__functions.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__struct.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support.h
+[6.393s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__functions.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__struct.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__functions.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__struct.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/hardware_monitor_command_send.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_interface_config_read.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_interface_config_write.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_preset_read.h
+[6.394s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_preset_write.h
+[6.395s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh
+[6.395s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv
+[6.395s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[6.396s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__rosidl_typesupport_fastrtps_c.h
+[6.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__rosidl_typesupport_fastrtps_c.h
+[6.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__rosidl_typesupport_fastrtps_c.h
+[6.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__rosidl_typesupport_fastrtps_c.h
+[6.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__rosidl_typesupport_fastrtps_c.h
+[6.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__rosidl_typesupport_introspection_c.h
+[6.397s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h
+[6.398s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__rosidl_typesupport_introspection_c.h
+[6.399s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__rosidl_typesupport_introspection_c.h
+[6.399s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__rosidl_typesupport_introspection_c.h
+[6.399s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__rosidl_typesupport_introspection_c.h
+[6.399s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__rosidl_typesupport_introspection_c.h
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__builder.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__struct.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__traits.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/triggered_calibration.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp
+[6.400s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp
+[6.401s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__builder.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__traits.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/application_config_read.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/application_config_write.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/calib_config_read.hpp
+[6.402s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/calib_config_write.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__builder.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__struct.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__traits.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__type_support.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__builder.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__struct.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__traits.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__type_support.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__builder.hpp
+[6.403s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__struct.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__traits.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__builder.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__struct.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__traits.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp
+[6.404s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__builder.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__struct.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__traits.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__type_support.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__builder.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__struct.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__traits.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__type_support.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__builder.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__struct.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__traits.hpp
+[6.405s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__type_support.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__builder.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__struct.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__traits.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__type_support.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__builder.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__struct.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__traits.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__type_support.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/hardware_monitor_command_send.hpp
+[6.406s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_interface_config_read.hpp
+[6.407s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_interface_config_write.hpp
+[6.407s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_preset_read.hpp
+[6.407s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/safety_preset_write.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__rosidl_typesupport_fastrtps_cpp.hpp
+[6.408s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__rosidl_typesupport_fastrtps_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__rosidl_typesupport_introspection_cpp.hpp
+[6.409s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_read__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/application_config_write__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/hardware_monitor_command_send__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_read__rosidl_typesupport_introspection_cpp.hpp
+[6.410s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_interface_config_write__rosidl_typesupport_introspection_cpp.hpp
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_read__rosidl_typesupport_introspection_cpp.hpp
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/safety_preset_write__rosidl_typesupport_introspection_cpp.hpp
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.57.0-py3.10.egg-info/PKG-INFO
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.57.0-py3.10.egg-info/SOURCES.txt
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.57.0-py3.10.egg-info/dependency_links.txt
+[6.411s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.57.0-py3.10.egg-info/top_level.txt
+[6.412s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py
+[6.412s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c
+[6.412s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/action/__init__.py
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/action/_triggered_calibration.py
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/action/_triggered_calibration_s.c
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py
+[6.413s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd_s.c
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_application_config_read.py
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_application_config_read_s.c
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_application_config_write.py
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_application_config_write_s.c
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_calib_config_read.py
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_calib_config_read_s.c
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_calib_config_write.py
+[6.414s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_calib_config_write_s.c
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_hardware_monitor_command_send.py
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_hardware_monitor_command_send_s.c
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_interface_config_read.py
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_interface_config_read_s.c
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_interface_config_write.py
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_interface_config_write_s.c
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_preset_read.py
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_preset_read_s.c
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_preset_write.py
+[6.415s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_safety_preset_write_s.c
+[6.416s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.416s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.416s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.416s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/rust_packages/realsense2_camera_msgs
+[6.416s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/Cargo.toml
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/build.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/action.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/action/rmw.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/lib.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/msg.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/msg/rmw.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/srv.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/rust/src/srv/rmw.rs
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl
+[6.417s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetRead.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetWrite.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigRead.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigWrite.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigRead.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigWrite.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigRead.idl
+[6.418s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigWrite.idl
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/HardwareMonitorCommandSend.idl
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/action/TriggeredCalibration.idl
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.msg
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg
+[6.419s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetRead.srv
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetRead_Request.msg
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetRead_Response.msg
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetWrite.srv
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetWrite_Request.msg
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyPresetWrite_Response.msg
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigRead.srv
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigRead_Request.msg
+[6.420s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigRead_Response.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigWrite.srv
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigWrite_Request.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/SafetyInterfaceConfigWrite_Response.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigRead.srv
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigRead_Request.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigRead_Response.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigWrite.srv
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigWrite_Request.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/CalibConfigWrite_Response.msg
+[6.421s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigRead.srv
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigRead_Request.msg
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigRead_Response.msg
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigWrite.srv
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigWrite_Request.msg
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/ApplicationConfigWrite_Response.msg
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/HardwareMonitorCommandSend.srv
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/HardwareMonitorCommandSend_Request.msg
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/HardwareMonitorCommandSend_Response.msg
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/action/TriggeredCalibration.action
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs
+[6.422s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh
+[6.423s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv
+[6.423s] -- Symlinking: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv
+[6.429s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake
+[6.430s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake
+[6.431s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml
+[6.469s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so
+[6.482s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so
+[6.504s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so
+[6.545s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so
+[6.573s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.575s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so
+[6.625s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so
+[6.738s] Listing '/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...
+[6.739s] Compiling '/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py'...
+[6.739s] Listing '/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/action'...
+[6.739s] Listing '/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...
+[6.740s] Listing '/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...
+[6.757s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so
+[6.759s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake
+[6.759s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-release.cmake
+[6.760s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[6.760s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[6.761s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.761s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[6.762s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake
+[6.762s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-release.cmake
+[6.762s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake
+[6.777s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.777s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[6.778s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.778s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[6.779s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake
+[6.779s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-release.cmake
+[6.781s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake
+[6.781s] -- Up-to-date: /home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-release.cmake
+[6.787s] Invoked command in '/home/student/sensor_platform_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/realsense2_camera_msgs

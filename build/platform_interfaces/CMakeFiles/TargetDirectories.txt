@@ -1,0 +1,9 @@
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/uninstall.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/platform_interfaces_uninstall.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/test.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/edit_cache.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/rebuild_cache.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/list_install_components.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/install.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/install/local.dir
+/home/student/sensor_platform_ws/build/platform_interfaces/CMakeFiles/install/strip.dir

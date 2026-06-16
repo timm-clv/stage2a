@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py

@@ -1,0 +1,11 @@
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/uninstall.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/platform_processing_uninstall.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/imu_sync_component.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/imu_sync_node.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/test.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/edit_cache.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/rebuild_cache.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/list_install_components.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/install.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/install/local.dir
+/home/student/sensor_platform_ws/build/platform_processing/CMakeFiles/install/strip.dir

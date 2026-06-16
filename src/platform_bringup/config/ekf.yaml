@@ -1,0 +1,63 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 500.0            # Fréquence de calcul et de publication de l'odométrie
+    sensor_timeout: 0.02         # Temps max (en s) avant de considérer un capteur comme perdu
+    two_d_mode: false           # Ton drone évolue en 3D (vols)
+    publish_tf: true            # L'EKF va publier la transformation odom -> base_link
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+
+    # ==================================================
+    # 1. Configuration de l'IMU (Issu de ton nœud C++ de moyennage)
+    # ==================================================
+    imu0: /imu/fused
+    # L'ordre de la matrice est : 
+    # [X, Y, Z,
+    #  Roll, Pitch, Yaw,
+    #  Vx, Vy, Vz,
+    #  Vroll, Vpitch, Vyaw,
+    #  Ax, Ay, Az]
+    imu0_config: [false, false, false,  # Position absolue : IGNORÉE
+                  true,  true,  true,   # Orientation : UTILISÉE (Si tu gères le quaternion)
+                  false, false, false,  # Vitesse linéaire : IGNORÉE
+                  true,  true,  true,   # Vitesse angulaire : UTILISÉE
+                  true,  true,  true]   # Accélération linéaire : UTILISÉE
+    
+    imu0_differential: false
+    imu0_queue_size: 20
+    imu0_remove_gravitational_acceleration: true # Retire la gravité (9.81) des mesures d'accélération
+
+    # ==================================================
+    # 2. Configuration du Flux Optique (Holybro H-Flow via CAN)
+    # ==================================================
+    velocity0: /optical_flow/velocity  # Topic à adapter quand ton bridge DroneCAN sera prêt
+    # Le flux optique nous donne principalement les vitesses linéaires en X et Y
+    velocity0_config: [false, false, false,
+                    false, false, false,
+                    true,  true,  false,  # Vitesse linéaire X et Y : UTILISÉE
+                    false, false, false,
+                    false, false, false]
+    velocity0_queue_size: 20
+    
+    # ==================================================
+    # 3. Configuration du Télémètre (Position Z)
+    # ==================================================
+    pose0: /optical_flow/range
+    pose0_config: [false, false, true,  # Position: Seul le Z (altitude) est lu
+                   false, false, false, # Orientation
+                   false, false, false, # Vitesse linéaire
+                   false, false, false, # Vitesse angulaire
+                   false, false, false] # Accélération
+    pose0_queue_size: 20
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

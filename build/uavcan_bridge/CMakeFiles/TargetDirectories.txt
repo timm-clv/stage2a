@@ -1,0 +1,11 @@
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/uninstall.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/uavcan_bridge_uninstall.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/dronecan_bridge_component.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/dronecan_bridge_node.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/test.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/edit_cache.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/rebuild_cache.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/list_install_components.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/install.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/install/local.dir
+/home/student/sensor_platform_ws/build/uavcan_bridge/CMakeFiles/install/strip.dir

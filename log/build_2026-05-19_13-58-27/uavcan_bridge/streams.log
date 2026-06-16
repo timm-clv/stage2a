@@ -1,0 +1,27 @@
+[0.021s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[0.074s] [ 60%] Built target dronecan_bridge_component
+[0.087s] [100%] Built target dronecan_bridge_node
+[0.136s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[0.136s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge
+[0.141s] -- Install configuration: "Release"
+[0.141s] -- Execute custom install script
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/uavcan_bridge/dronecan_bridge_node
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/libdronecan_bridge_component.so
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/package_run_dependencies/uavcan_bridge
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/parent_prefix_path/uavcan_bridge
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.sh
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.dsv
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.sh
+[0.142s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.dsv
+[0.143s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.bash
+[0.143s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.sh
+[0.143s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.zsh
+[0.143s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.dsv
+[0.143s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.dsv
+[0.150s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/packages/uavcan_bridge
+[0.150s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/rclcpp_components/uavcan_bridge
+[0.150s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.150s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig.cmake
+[0.150s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig-version.cmake
+[0.150s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.xml
+[0.152s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge

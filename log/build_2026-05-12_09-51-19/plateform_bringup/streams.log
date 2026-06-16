@@ -1,0 +1,44 @@
+[0.035s] Invoking command in '/home/student/sensor_platform_ws/build/plateform_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/plateform_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/plateform_bringup
+[1.208s] -- The C compiler identification is GNU 11.4.0
+[1.757s] -- The CXX compiler identification is GNU 11.4.0
+[1.810s] -- Detecting C compiler ABI info
+[2.133s] -- Detecting C compiler ABI info - done
+[2.146s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.146s] -- Detecting C compile features
+[2.155s] -- Detecting C compile features - done
+[2.161s] -- Detecting CXX compiler ABI info
+[2.293s] -- Detecting CXX compiler ABI info - done
+[2.300s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.301s] -- Detecting CXX compile features
+[2.301s] -- Detecting CXX compile features - done
+[2.386s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.777s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.851s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.928s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.123s] -- Added test 'lint_cmake' to check CMake code style
+[3.129s] -- Added test 'xmllint' to check XML markup files
+[3.136s] -- Configuring done
+[3.144s] -- Generating done
+[3.151s] -- Build files have been written to: /home/student/sensor_platform_ws/build/plateform_bringup
+[3.179s] Invoked command in '/home/student/sensor_platform_ws/build/plateform_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/plateform_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/plateform_bringup
+[3.180s] Invoking command in '/home/student/sensor_platform_ws/build/plateform_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/plateform_bringup -- -j8 -l8
+[3.294s] Invoked command in '/home/student/sensor_platform_ws/build/plateform_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/plateform_bringup -- -j8 -l8
+[3.296s] Invoking command in '/home/student/sensor_platform_ws/build/plateform_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/plateform_bringup
+[3.305s] -- Install configuration: ""
+[3.306s] -- Execute custom install script
+[3.307s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/ament_index/resource_index/package_run_dependencies/plateform_bringup
+[3.319s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/ament_index/resource_index/parent_prefix_path/plateform_bringup
+[3.327s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/environment/ament_prefix_path.sh
+[3.336s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/environment/ament_prefix_path.dsv
+[3.344s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/environment/path.sh
+[3.353s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/environment/path.dsv
+[3.361s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/local_setup.bash
+[3.370s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/local_setup.sh
+[3.379s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/local_setup.zsh
+[3.387s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/local_setup.dsv
+[3.396s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/package.dsv
+[3.407s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/ament_index/resource_index/packages/plateform_bringup
+[3.416s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/cmake/plateform_bringupConfig.cmake
+[3.424s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/cmake/plateform_bringupConfig-version.cmake
+[3.433s] -- Symlinking: /home/student/sensor_platform_ws/install/plateform_bringup/share/plateform_bringup/package.xml
+[3.700s] Invoked command in '/home/student/sensor_platform_ws/build/plateform_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/plateform_bringup

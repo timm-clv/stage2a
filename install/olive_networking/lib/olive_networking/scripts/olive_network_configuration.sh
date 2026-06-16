@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/src/olive_networking/scripts/olive_network_configuration.sh

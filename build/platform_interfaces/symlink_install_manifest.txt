@@ -1,0 +1,15 @@
+/home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/package_run_dependencies/platform_interfaces
+/home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/parent_prefix_path/platform_interfaces
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/ament_prefix_path.sh
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/ament_prefix_path.dsv
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/path.sh
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/path.dsv
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.bash
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.sh
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.zsh
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.dsv
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.dsv
+/home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/packages/platform_interfaces
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/cmake/platform_interfacesConfig.cmake
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/cmake/platform_interfacesConfig-version.cmake
+/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.xml

@@ -1,0 +1,17 @@
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/urdf/sensor_platform.urdf.xacro
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/launch/display.launch.py
+/home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/package_run_dependencies/platform_description
+/home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/parent_prefix_path/platform_description
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/ament_prefix_path.sh
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/ament_prefix_path.dsv
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/path.sh
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/path.dsv
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.bash
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.sh
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.zsh
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.dsv
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.dsv
+/home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/packages/platform_description
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/cmake/platform_descriptionConfig.cmake
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/cmake/platform_descriptionConfig-version.cmake
+/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.xml

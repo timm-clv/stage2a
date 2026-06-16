@@ -1,0 +1,23 @@
+[0.191s] Invoking command in '/home/student/sensor_platform_ws/build/platform_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_description -- -j8 -l8
+[0.890s] Invoked command in '/home/student/sensor_platform_ws/build/platform_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_description -- -j8 -l8
+[0.988s] Invoking command in '/home/student/sensor_platform_ws/build/platform_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_description
+[1.020s] -- Install configuration: "Release"
+[1.022s] -- Execute custom install script
+[1.076s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/urdf/sensor_platform.urdf.xacro
+[1.081s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/launch/display.launch.py
+[1.082s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/package_run_dependencies/platform_description
+[1.083s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/parent_prefix_path/platform_description
+[1.520s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/ament_prefix_path.sh
+[1.522s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/ament_prefix_path.dsv
+[1.524s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/path.sh
+[1.526s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/path.dsv
+[1.527s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.bash
+[1.530s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.sh
+[1.531s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.zsh
+[1.532s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.dsv
+[1.532s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.dsv
+[1.554s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/packages/platform_description
+[1.555s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/cmake/platform_descriptionConfig.cmake
+[1.571s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/cmake/platform_descriptionConfig-version.cmake
+[1.573s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.xml
+[2.035s] Invoked command in '/home/student/sensor_platform_ws/build/platform_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_description

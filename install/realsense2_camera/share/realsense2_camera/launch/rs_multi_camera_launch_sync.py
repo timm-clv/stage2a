@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera/launch/rs_multi_camera_launch_sync.py

@@ -1,0 +1,9 @@
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/uninstall.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/olive_networking_uninstall.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/test.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/edit_cache.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/rebuild_cache.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/list_install_components.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/install.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/install/local.dir
+/home/student/sensor_platform_ws/build/olive_networking/CMakeFiles/install/strip.dir

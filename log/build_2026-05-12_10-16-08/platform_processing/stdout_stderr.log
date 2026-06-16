@@ -1,0 +1,14 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_sync_node.dir/rclcpp_components/node_main_imu_sync_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In member function ‘[01m[Kvoid platform_processing::ImuSyncComponent::syncCallback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:51:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg_xsens2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   51 |     [01;35m[Kconst sensor_msgs::msg::Imu::ConstSharedPtr& msg_xsens2[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[ 75%] [32m[1mLinking CXX executable imu_sync_node[0m
+[ 75%] Built target imu_sync_node
+[100%] [32m[1mLinking CXX shared library libimu_sync_component.so[0m
+/usr/bin/ld: cannot find -lsensor_msgs::symbol_static: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/imu_sync_component.dir/build.make:187: libimu_sync_component.so] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/imu_sync_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,5 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_sync_node.dir/rclcpp_components/node_main_imu_sync_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable imu_sync_node[0m
+[ 75%] Built target imu_sync_node
+[100%] [32m[1mLinking CXX shared library libimu_sync_component.so[0m

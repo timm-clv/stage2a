@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/build/xsens_mti_ros2_driver/rosidl_generator_py/xsens_mti_ros2_driver/msg/_xs_status_word.py

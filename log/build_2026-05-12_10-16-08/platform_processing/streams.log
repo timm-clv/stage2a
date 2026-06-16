@@ -1,0 +1,16 @@
+[0.007s] Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
+[0.040s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_sync_node.dir/rclcpp_components/node_main_imu_sync_node.cpp.o[0m
+[0.040s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
+[3.723s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In member function ‘[01m[Kvoid platform_processing::ImuSyncComponent::syncCallback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[3.723s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:51:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg_xsens2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.723s]    51 |     [01;35m[Kconst sensor_msgs::msg::Imu::ConstSharedPtr& msg_xsens2[m[K)
+[3.723s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[4.262s] [ 75%] [32m[1mLinking CXX executable imu_sync_node[0m
+[4.621s] [ 75%] Built target imu_sync_node
+[9.467s] [100%] [32m[1mLinking CXX shared library libimu_sync_component.so[0m
+[9.511s] /usr/bin/ld: cannot find -lsensor_msgs::symbol_static: No such file or directory
+[9.797s] collect2: error: ld returned 1 exit status
+[9.798s] gmake[2]: *** [CMakeFiles/imu_sync_component.dir/build.make:187: libimu_sync_component.so] Error 1
+[9.798s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/imu_sync_component.dir/all] Error 2
+[9.798s] gmake: *** [Makefile:146: all] Error 2
+[9.800s] Invoked command in '/home/student/sensor_platform_ws/build/platform_processing' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8

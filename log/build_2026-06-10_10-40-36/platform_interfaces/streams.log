@@ -1,0 +1,21 @@
+[0.206s] Invoking command in '/home/student/sensor_platform_ws/build/platform_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_interfaces -- -j8 -l8
+[0.710s] Invoked command in '/home/student/sensor_platform_ws/build/platform_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_interfaces -- -j8 -l8
+[0.876s] Invoking command in '/home/student/sensor_platform_ws/build/platform_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_interfaces
+[0.986s] -- Install configuration: "Release"
+[0.987s] -- Execute custom install script
+[1.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/package_run_dependencies/platform_interfaces
+[1.008s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/parent_prefix_path/platform_interfaces
+[1.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/ament_prefix_path.sh
+[1.013s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/ament_prefix_path.dsv
+[1.013s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/path.sh
+[1.014s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/path.dsv
+[1.015s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.bash
+[1.016s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.sh
+[1.019s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.zsh
+[1.021s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.dsv
+[1.021s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.dsv
+[1.046s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/packages/platform_interfaces
+[1.049s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/cmake/platform_interfacesConfig.cmake
+[1.049s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/cmake/platform_interfacesConfig-version.cmake
+[1.050s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.xml
+[1.054s] Invoked command in '/home/student/sensor_platform_ws/build/platform_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_interfaces

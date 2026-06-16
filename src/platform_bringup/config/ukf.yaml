@@ -1,0 +1,69 @@
+ukf_filter_node:
+  ros__parameters:
+    frequency: 100.0
+    sensor_timeout: 0.1
+    two_d_mode: false
+    publish_tf: true
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+
+    # --- POSES (Positions absolues et relatives) ---
+    # 1. Télémètre Laser (Altitude très précise)
+    pose0: /optical_flow/range
+    pose0_config: [false, false, true,   # Z
+                   false, false, false,
+                   false, false, false,
+                   false, false, false,
+                   false, false, false]
+    
+    # 2. Caméra Pose (Estimée par olixAI)
+    pose1: /olive/camera/olivecam/pose_synced
+    pose1_config: [true,  true,  true,   # X, Y, Z
+                   true,  true,  true,   # Roll, Pitch, Yaw
+                   false, false, false,
+                   false, false, false,
+                   false, false, false]
+
+    # --- TWISTS (Vitesses) ---
+    # 1. Flux Optique Matériel (Vitesse au sol)
+    twist0: /optical_flow/velocity
+    twist0_config: [false, false, false,
+                    false, false, false,
+                    true,  true,  false, # Vx, Vy
+                    false, false, false,
+                    false, false, false]
+
+    # 2. Vitesse Native IMU (Estimée par olixAI)
+    twist1: /olive/olixSense/x1/id001/velocity_synced
+    twist1_config: [false, false, false,
+                    false, false, false,
+                    true,  true,  true,  # Vx, Vy, Vz
+                    false, false, false,
+                    false, false, false]
+
+    # --- IMUS (Accélérations et Rotations) ---
+    # 1. IMU Central (Orientation + Gyro)
+    imu0: /imu/fused
+    imu0_config: [false, false, false,
+                  true,  true,  true,    # Roll, Pitch, Yaw
+                  false, false, false,
+                  true,  true,  true,    # Vroll, Vpitch, Vyaw
+                  false, false, false]
+    
+    # 2. Accélération Native IMU (Isolée de la gravité)
+    imu1: /olive/olixSense/x1/id001/acceleration_synced
+    imu1_config: [false, false, false,
+                  false, false, false,
+                  false, false, false,
+                  false, false, false,
+                  true,  true,  true]    # Ax, Ay, Az
+                  
+    # Dans ekf.yaml / ukf.yaml sous la section imu1 (Accélération native)
+    imu1_linear_acceleration_covariance: [0.1, 0.0, 0.0,
+                                          0.0, 0.1, 0.0,
+                                          0.0, 0.0, 0.1]
+                                          
+                                          
+                                          

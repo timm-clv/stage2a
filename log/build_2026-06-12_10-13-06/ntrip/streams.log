@@ -1,0 +1,29 @@
+[0.147s] Invoking command in '/home/student/sensor_platform_ws/build/ntrip': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/ntrip -- -j8 -l8
+[3.829s] [ 60%] Built target ntrip_lib
+[3.978s] [100%] Built target ntrip
+[3.988s] Invoked command in '/home/student/sensor_platform_ws/build/ntrip' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/ntrip -- -j8 -l8
+[4.025s] Invoking command in '/home/student/sensor_platform_ws/build/ntrip': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/ntrip
+[4.032s] -- Install configuration: "Release"
+[4.034s] -- Execute custom install script
+[4.051s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/lib/libntrip_lib.a
+[4.054s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/lib/ntrip/ntrip
+[4.055s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/config/ntrip-param.yaml
+[4.056s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/launch/ntrip_launch.py
+[4.056s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/include//ntrip_client/ntrip_client.h
+[4.057s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/include//ntrip_client/rtcm_parser.h
+[4.058s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ament_index/resource_index/package_run_dependencies/ntrip
+[4.059s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ament_index/resource_index/parent_prefix_path/ntrip
+[4.071s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/environment/ament_prefix_path.sh
+[4.072s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/environment/ament_prefix_path.dsv
+[4.074s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/environment/path.sh
+[4.075s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/environment/path.dsv
+[4.075s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/local_setup.bash
+[4.088s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/local_setup.sh
+[4.090s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/local_setup.zsh
+[4.092s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/local_setup.dsv
+[4.093s] -- Symlinking: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/package.dsv
+[4.120s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ament_index/resource_index/packages/ntrip
+[4.122s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/cmake/ntripConfig.cmake
+[4.122s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/cmake/ntripConfig-version.cmake
+[4.124s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/ntrip/share/ntrip/package.xml
+[4.132s] Invoked command in '/home/student/sensor_platform_ws/build/ntrip' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/ntrip

@@ -1,0 +1,196 @@
+[0.006s] Invoking command in '/home/student/sensor_platform_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/realsense2_camera
+[0.015s] -- Create Release Build.
+[0.015s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.107s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.112s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.129s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.134s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.135s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.161s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.181s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.182s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.250s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.289s] -- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.313s] -- Found realsense2_camera_msgs: 4.57.0 (/home/student/sensor_platform_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[0.361s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[0.388s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.401s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.459s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[0.554s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.634s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.670s] -- Build for ROS2 Humble
+[0.680s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.682s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.707s] -- Found ament_cmake_pytest: 1.3.14 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[1.952s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[1.952s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[1.952s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[1.952s]   using pip.
+[1.952s] Call Stack (most recent call first):
+[1.952s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[1.952s] 
+[1.952s] [0m
+[2.211s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[2.211s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[2.211s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[2.211s]   using pip.
+[2.211s] Call Stack (most recent call first):
+[2.211s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[2.211s] 
+[2.211s] [0m
+[2.468s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[2.468s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[2.468s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[2.468s]   using pip.
+[2.468s] Call Stack (most recent call first):
+[2.468s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[2.468s] 
+[2.468s] [0m
+[2.728s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[2.728s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[2.728s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[2.728s]   using pip.
+[2.728s] Call Stack (most recent call first):
+[2.728s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[2.728s] 
+[2.728s] [0m
+[2.986s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[2.986s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[2.986s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[2.986s]   using pip.
+[2.986s] Call Stack (most recent call first):
+[2.986s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[2.986s] 
+[2.986s] [0m
+[3.245s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[3.245s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[3.245s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[3.245s]   using pip.
+[3.246s] Call Stack (most recent call first):
+[3.246s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[3.246s] 
+[3.246s] [0m
+[3.507s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[3.507s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[3.507s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[3.508s]   using pip.
+[3.508s] Call Stack (most recent call first):
+[3.508s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[3.508s] 
+[3.508s] [0m
+[3.767s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[3.767s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[3.767s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[3.767s]   using pip.
+[3.768s] Call Stack (most recent call first):
+[3.768s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[3.768s] 
+[3.768s] [0m
+[4.028s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[4.029s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[4.029s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[4.029s]   using pip.
+[4.029s] Call Stack (most recent call first):
+[4.029s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[4.029s] 
+[4.029s] [0m
+[4.288s] [33mCMake Warning at /opt/ros/humble/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:79 (message):
+[4.288s]   The Python module 'pytest' was not found, pytests cannot be run.  On Linux,
+[4.288s]   install the 'python3-pytest' package.  On other platforms, install 'pytest'
+[4.288s]   using pip.
+[4.288s] Call Stack (most recent call first):
+[4.288s]   CMakeLists.txt:425 (ament_add_pytest_test)
+[4.288s] 
+[4.288s] [0m
+[4.707s] -- rs_device_info:
+[4.707s] --  19/05 13:53:43,607 ERROR [134885329580608] (context.cpp:41) No valid configuration file found at : /home/student/.realsense-config.json loading defaults
+[4.707s] No device detected. Is it plugged in?
+[4.708s] 
+[4.783s] -- Configuring done
+[4.811s] -- Generating done
+[4.819s] -- Build files have been written to: /home/student/sensor_platform_ws/build/realsense2_camera
+[4.828s] Invoked command in '/home/student/sensor_platform_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/realsense2_camera
+[4.828s] Invoking command in '/home/student/sensor_platform_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/student/sensor_platform_ws/build/realsense2_camera -- -j8 -l8
+[4.855s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[4.855s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[4.855s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_node[0m
+[4.865s] [ 15%] Built target gtest
+[4.865s] [ 15%] Built target gtest_main
+[4.865s] [ 23%] Built target realsense2_camera_node
+[4.865s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera[0m
+[4.872s] [35m[1mConsolidate compiler generated dependencies of target gtest_template[0m
+[4.880s] [ 30%] Built target gtest_template
+[4.963s] [100%] Built target realsense2_camera
+[4.986s] Invoked command in '/home/student/sensor_platform_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/student/sensor_platform_ws/build/realsense2_camera -- -j8 -l8
+[4.988s] Invoking command in '/home/student/sensor_platform_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/student/sensor_platform_ws/build/realsense2_camera
+[4.995s] -- Install configuration: "Release"
+[4.996s] -- Execute custom install script
+[4.996s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/config/global_settings.yaml
+[4.996s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[4.996s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[4.997s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/align_depth_filter.h
+[4.997s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/base_realsense_node.h
+[4.997s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/constants.h
+[4.997s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/context_singleton_wrapper.h
+[4.997s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/dynamic_params.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/gl_window.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/image_publisher.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/named_filter.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/pointcloud_filter.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/profile_manager.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/realsense_node_factory.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/ros_node_base.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/ros_param_backend.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/ros_sensor.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/ros_utils.h
+[4.998s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/include/sensor_params.h
+[4.999s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[4.999s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[4.999s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[4.999s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[4.999s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch_sync.py
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/d500_tables/application_config_example.json
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/d500_tables/calib_config_example.json
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/d500_tables/safety_interface_config_example.json
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/d500_tables/safety_preset_example.json
+[5.000s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[5.001s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_infra_launch.py
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[5.002s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[5.003s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[5.004s] -- Symlinking: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[5.010s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[5.010s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[5.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[5.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[5.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[5.011s] -- Up-to-date symlink: /home/student/sensor_platform_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[5.012s] Invoked command in '/home/student/sensor_platform_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/student/sensor_platform_ws/build/realsense2_camera

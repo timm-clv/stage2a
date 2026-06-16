@@ -1,0 +1,31 @@
+[0.019s] Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
+[0.076s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
+[0.076s] [ 75%] Built target imu_sync_node
+[2.129s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[2.129s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope
+[2.129s]    57 |         [01;31m[Kout[m[K.header.stamp = applyCamOffset(msg->header.stamp);
+[2.129s]       |         [01;31m[K^~~[m[K
+[2.138s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[2.138s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:69:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope
+[2.138s]    69 |         [01;31m[Kout[m[K.header.stamp = applyCamOffset(msg->header.stamp);
+[2.138s]       |         [01;31m[K^~~[m[K
+[2.147s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[2.147s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:78:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope
+[2.147s]    78 |         [01;31m[Kout[m[K.header.stamp = applyCamOffset(msg->header.stamp);
+[2.147s]       |         [01;31m[K^~~[m[K
+[2.156s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[2.157s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:90:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope
+[2.157s]    90 |         [01;31m[Kout[m[K.header.stamp = applyCamOffset(msg->header.stamp);
+[2.157s]       |         [01;31m[K^~~[m[K
+[2.160s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[2.160s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope
+[2.161s]   102 |         [01;31m[Kout[m[K.header.stamp = applyImuOffset(msg->header.stamp);
+[2.161s]       |         [01;31m[K^~~[m[K
+[2.164s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[2.164s] [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:111:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope
+[2.164s]   111 |         [01;31m[Kout[m[K.header.stamp = applyImuOffset(msg->header.stamp);
+[2.164s]       |         [01;31m[K^~~[m[K
+[8.197s] gmake[2]: *** [CMakeFiles/imu_sync_component.dir/build.make:76: CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o] Error 1
+[8.197s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/imu_sync_component.dir/all] Error 2
+[8.198s] gmake: *** [Makefile:146: all] Error 2
+[8.200s] Invoked command in '/home/student/sensor_platform_ws/build/platform_processing' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8

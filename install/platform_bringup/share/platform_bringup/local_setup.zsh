@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/build/platform_bringup/ament_cmake_environment_hooks/local_setup.zsh

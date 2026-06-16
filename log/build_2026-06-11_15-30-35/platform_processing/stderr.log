@@ -1,0 +1,78 @@
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:42:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+  171 |   rclcpp::Subscription<sensor_msgs::msg::[01;31m[KCameraInfo[m[K>::SharedPtr sub_cam_info_;
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  171 |   rclcpp::Subscription<sensor_msgs::msg::CameraInfo[01;31m[K>[m[K::SharedPtr sub_cam_info_;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  171 |   rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::[01;31m[KSharedPtr[m[K sub_cam_info_;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_cam_info_[m[K’ does not name a type
+  171 |   rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr [01;31m[Ksub_cam_info_[m[K;
+      |                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:172:39:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+  172 |   rclcpp::Publisher<sensor_msgs::msg::[01;31m[KCameraInfo[m[K>::SharedPtr pub_cam_info_synced_;
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:172:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  172 |   rclcpp::Publisher<sensor_msgs::msg::CameraInfo[01;31m[K>[m[K::SharedPtr pub_cam_info_synced_;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:172:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  172 |   rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::[01;31m[KSharedPtr[m[K pub_cam_info_synced_;
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:172:52:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint platform_processing::ImuSyncComponent::SharedPtr[m[K’
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:171:55:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint platform_processing::ImuSyncComponent::SharedPtr[m[K’
+  171 |   rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::[01;36m[KSharedPtr[m[K sub_cam_info_;
+      |                                                       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:172:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_cam_info_synced_[m[K’ does not name a type
+  172 |   rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr [01;31m[Kpub_cam_info_synced_[m[K;
+      |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In constructor ‘[01m[Kplatform_processing::ImuSyncComponent::ImuSyncComponent(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_cam_info_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub_cam_pose_[m[K’?
+   80 |     [01;31m[Ksub_cam_info_[m[K = this->create_subscription<sensor_msgs::msg::CameraInfo>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Ksub_cam_pose_[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:80:65:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   80 |     sub_cam_info_ = this->create_subscription<sensor_msgs::msg::[01;31m[KCameraInfo[m[K>(
+      |                                                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:81:107:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ in namespace ‘[01m[Ksensor_msgs::msg[m[K’ does not name a type
+   81 |       "/olive/camera/olivecam/image/camera_info", rclcpp::SensorDataQoS(), [this](const sensor_msgs::msg::[01;31m[KCameraInfo[m[K::SharedPtr msg) {
+      |                                                                                                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:82:144:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+   82 |         auto out = *msg; out.header.stamp = this->now(); out.header.frame_id = "olivecam_optical_frame"; pub_cam_info_synced_->publish(out); })[01;31m[K;[m[K
+      |                                                                                                                                                [01;31m[K^[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In constructor ‘[01m[Kplatform_processing::ImuSyncComponent::ImuSyncComponent(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:82:144:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:80:76:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   80 |     sub_cam_info_ = this->create_subscription<sensor_msgs::msg::CameraInfo>[01;36m[K([m[K
+      |                                                                            [01;36m[K^[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:83:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_cam_info_synced_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_cam_pose_synced_[m[K’?
+   83 |     [01;31m[Kpub_cam_info_synced_[m[K = this->create_publisher<sensor_msgs::msg::CameraInfo>("/olive/camera/image_synced/camera_info", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kpub_cam_pose_synced_[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:83:69:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   83 |     pub_cam_info_synced_ = this->create_publisher<sensor_msgs::msg::[01;31m[KCameraInfo[m[K>("/olive/camera/image_synced/camera_info", 10);
+      |                                                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:83:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kplatform_processing::ImuSyncComponent::create_publisher<<expression error> >(const char [39], int)[m[K’
+   83 |     pub_cam_info_synced_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::CameraInfo>("/olive/camera/image_synced/camera_info", 10)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:83:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   83 |     pub_cam_info_synced_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::CameraInfo>("/olive/camera/image_synced/camera_info", 10)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/imu_sync_component.dir/build.make:76: CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/imu_sync_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

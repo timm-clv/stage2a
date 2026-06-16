@@ -1,0 +1,4 @@
+source;share/uavcan_bridge/local_setup.bash
+source;share/uavcan_bridge/local_setup.dsv
+source;share/uavcan_bridge/local_setup.sh
+source;share/uavcan_bridge/local_setup.zsh

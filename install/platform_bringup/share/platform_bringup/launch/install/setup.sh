@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/src/platform_bringup/launch/install/setup.sh

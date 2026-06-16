@@ -1,0 +1,1 @@
+/home/student/sensor_platform_ws/src/hardware/realsense-ros/realsense2_camera/include/sensor_params.h

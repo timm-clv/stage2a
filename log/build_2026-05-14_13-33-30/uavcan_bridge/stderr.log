@@ -1,0 +1,14 @@
+In file included from [01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/src/dronecan_bridge_component.cpp:19[m[K:
+[01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/include/libcanard/canard.h:332:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids flexible array member ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  332 |     uint8_t [01;35m[Kdata[m[K[];
+      |             [01;35m[K^~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/include/libcanard/canard.h:369:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids flexible array member ‘[01m[Kbuffer_head[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  369 |     uint8_t [01;35m[Kbuffer_head[m[K[];
+      |             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/src/dronecan_bridge_component.cpp:[m[K In function ‘[01m[Kbool uavcan_bridge::shouldAcceptTransfer(const CanardInstance*, uint64_t*, uint16_t, CanardTransferType, uint8_t)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/src/dronecan_bridge_component.cpp:99:45:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""xYOUR_FLOW_SIG_ULL[m[K’
+   99 |     if (id == ID_OPTICAL_FLOW) { *out_sig = [01;31m[K0xYOUR_FLOW_SIG_ULL[m[K; return true; } // Ta signature récupérée
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dronecan_bridge_component.dir/build.make:76: CMakeFiles/dronecan_bridge_component.dir/src/dronecan_bridge_component.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dronecan_bridge_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

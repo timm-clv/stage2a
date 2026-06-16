@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target imu_sync_component[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
+[ 75%] Built target imu_sync_node
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:45:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _pose_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+   45 |         out.pose.[01;31m[Kcovariance[m[K[0] = 0.1;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:46:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _pose_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+   46 |         out.pose.[01;31m[Kcovariance[m[K[7] = 0.1;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:47:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _pose_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+   47 |         out.pose.[01;31m[Kcovariance[m[K[14] = 0.1;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:59:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+   59 |         out.twist.[01;31m[Kcovariance[m[K[0] = 0.05;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:60:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+   60 |         out.twist.[01;31m[Kcovariance[m[K[7] = 0.05;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:61:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+   61 |         out.twist.[01;31m[Kcovariance[m[K[14] = 0.05;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:[m[K In lambda function:
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:103:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+  103 |         out.twist.[01;31m[Kcovariance[m[K[0] = 0.05;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:104:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+  104 |         out.twist.[01;31m[Kcovariance[m[K[7] = 0.05;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/platform_processing/src/imu_sync_component.cpp:105:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _twist_type = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcovariance[m[K’
+  105 |         out.twist.[01;31m[Kcovariance[m[K[14] = 0.05;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/imu_sync_component.dir/build.make:76: CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/imu_sync_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

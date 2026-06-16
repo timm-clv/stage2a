@@ -1,0 +1,7 @@
+{
+  "package_name": "xsens_mti_ros2_driver",
+  "non_idl_tuples": [
+    "/home/student/sensor_platform_ws/src/hardware/xsens_mti_driver/src/xsens_mti_ros2_driver:msg/XsStatusWord.msg",
+    "/home/student/sensor_platform_ws/src/hardware/xsens_mti_driver/src/xsens_mti_ros2_driver:msg/ShipMotion.msg"
+  ]
+}
