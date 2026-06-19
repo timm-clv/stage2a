@@ -14,10 +14,8 @@ src/
 │   ├── rules
 │   │   └── 99-olive-networking.rules
 │   ├── scripts
-│   │   ├── imu_relay.py
 │   │   ├── install_rules.sh
-│   │   ├── olive_network_configuration.sh
-│   │   └── setup_imu_namespace.sh
+│   │   └── olive_network_configuration.sh
 │   └── src
 ├── platform_bringup
 │   ├── CMakeLists.txt
@@ -25,19 +23,14 @@ src/
 │   │   ├── ekf.yaml
 │   │   ├── fusioncore.yaml
 │   │   ├── inekf.yaml
-│   │   ├── olive_bridge.yaml
 │   │   └── ukf.yaml
 │   ├── launch
 │   │   ├── calibration_hardware.launch.py
 │   │   ├── can_allocator.py
 │   │   ├── offline_fusion.launch.py
-│   │   ├── olive_bridge.launch.py
 │   │   ├── record_dataset.launch.py
 │   │   ├── system.launch.py
-│   │   ├── test_hflow.launch.py
-│   │   ├── test_olix_cam.launch.py
-│   │   ├── test_olix_imu.launch.py
-│   │   └── test_sync.launch.py
+│   │   └── test_hflow.launch.py
 │   ├── package.xml
 │   └── src
 ├── platform_description
@@ -61,7 +54,7 @@ src/
     └── src
         └── imu_sync_component.cpp
 
-22 directories, 38 files
+22 directories, 31 files
 
 
 === CONTENU DES FICHIERS SOURCES ===
@@ -105,8 +98,6 @@ install(FILES
 # Rendre le script exécutable et l'installer dans le répertoire attendu
 install(PROGRAMS
   scripts/olive_network_configuration.sh
-  scripts/setup_imu_namespace.sh
-  scripts/imu_relay.py
   DESTINATION lib/${PROJECT_NAME}/scripts
 )
 
@@ -117,124 +108,6 @@ install(DIRECTORY config
 
 
 ament_package()
-
-
---------------------------------------------------
-FICHIER : src/olive_networking/scripts/setup_imu_namespace.sh
---------------------------------------------------
-#!/bin/bash
-# Configuration de l'isolation réseau pour l'OlixSense IMU
-
-IMU_IFACE="enx_olive_imu"
-ACTUAL_USER=${SUDO_USER:-$USER}
-
-echo "[INFO] Nettoyage de l'ancienne session..."
-# Tuer le bon script Python
-sudo pkill -f imu_relay.py 2>/dev/null
-# Ramener de force l'interface dans le namespace hôte (PID 1) avant destruction
-sudo ip netns exec imu_ns ip link set $IMU_IFACE netns 1 2>/dev/null
-sudo ip netns del imu_ns 2>/dev/null
-sudo ip link del veth_main 2>/dev/null
-# 1. [CRITIQUE] Forcer udev à réévaluer les interfaces réseau
-sudo udevadm trigger --action=add --subsystem-match=net
-sudo udevadm settle
-
-# 2. Attente active de l'interface (Polling jusqu'à 15 secondes)
-echo "[INFO] Attente du retour de l'interface $IMU_IFACE sur l'hôte..."
-MAX_RETRIES=15
-COUNT=0
-while ! ip link show $IMU_IFACE > /dev/null 2>&1; do
-    sleep 1
-    COUNT=$((COUNT+1))
-    if [ $COUNT -ge $MAX_RETRIES ]; then
-        echo "[ERREUR] L'interface $IMU_IFACE est introuvable après ${MAX_RETRIES}s. Débranche et rebranche l'IMU."
-        exit 1
-    fi
-done
-echo "[OK] Interface $IMU_IFACE trouvée."
-
-# 3. [CRITIQUE] Empêcher NetworkManager d'interférer avec cette interface
-sudo nmcli dev set $IMU_IFACE managed no 2>/dev/null
-
-echo "[INFO] Création du namespace et migration..."
-sudo ip netns add imu_ns
-sudo ip netns exec imu_ns ip link set dev lo up
-sudo ip link set $IMU_IFACE netns imu_ns
-
-# 4. Configuration IP dans le Namespace
-sudo ip netns exec imu_ns ip addr add 192.168.7.102/24 brd 192.168.7.255 dev $IMU_IFACE
-sudo ip netns exec imu_ns ip link set $IMU_IFACE up
-
-# 5. Création du tunnel veth
-sudo ip link add veth_main type veth peer name veth_ns
-sudo ip link set veth_ns netns imu_ns
-
-# 6. Configuration du tunnel (Hôte)
-sudo ip addr add 10.0.0.1/24 dev veth_main
-sudo ip link set veth_main up
-sudo ip route add 224.0.0.0/4 dev veth_main 2>/dev/null
-
-# 7. Configuration du tunnel (Namespace)
-sudo ip netns exec imu_ns ip addr add 10.0.0.2/24 dev veth_ns
-sudo ip netns exec imu_ns ip link set veth_ns up
-sudo ip netns exec imu_ns ip route add 224.0.0.0/4 dev veth_ns 2>/dev/null
-
-# 7. Configuration des buffers (Namespace) alignée avec l'hôte
-sudo ip netns exec imu_ns sysctl -w net.core.rmem_max=8388608
-sudo ip netns exec imu_ns sysctl -w net.core.rmem_default=8388608
-sudo ip netns exec imu_ns sysctl -w net.core.wmem_max=8388608
-sudo ip netns exec imu_ns sysctl -w net.core.wmem_default=8388608
-
-echo "[INFO] Démarrage du pont ROS 2 (topic_tools) dans l'espace isolé..."
-
-nohup sudo ip netns exec imu_ns sudo -u $ACTUAL_USER bash -c "
-  export HOME=/home/$ACTUAL_USER
-  export ROS_LOG_DIR=/tmp/ros_logs_$ACTUAL_USER
-  source /opt/ros/humble/setup.bash
-  source /home/$ACTUAL_USER/sensor_platform_ws/install/setup.bash
-  export ROS_DOMAIN_ID=0
-  export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-  
-  # ---> CORRECTION 2 : Charger le profil DDS optimisé pour le relais
-  export FASTRTPS_DEFAULT_PROFILES_FILE=/home/$ACTUAL_USER/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml
-  
-  python3 /home/$ACTUAL_USER/sensor_platform_ws/src/olive_networking/scripts/imu_relay.py &
-" > /tmp/imu_relay.log 2>&1 &
-
-echo "[OK] Relais ROS 2 actif. Les topics de l'IMU sont pontés sur le domaine 0."
-
-
---------------------------------------------------
-FICHIER : src/olive_networking/scripts/imu_relay.py
---------------------------------------------------
-#!/usr/bin/env python3
-import rclpy
-from rclpy.node import Node
-from rclpy.qos import qos_profile_sensor_data
-from sensor_msgs.msg import Imu
-from geometry_msgs.msg import TwistStamped, AccelStamped
-
-class ImuRelay(Node):
-    def __init__(self):
-        super().__init__('imu_namespace_relay')
-        
-        # Publishers
-        self.pub_imu = self.create_publisher(Imu, '/imu/data', qos_profile_sensor_data)
-        self.pub_vel = self.create_publisher(TwistStamped, '/olive/olixSense/x1/id001/velocity', qos_profile_sensor_data)
-        self.pub_acc = self.create_publisher(AccelStamped, '/olive/olixSense/x1/id001/acceleration', qos_profile_sensor_data)
-        
-        # Subscribers (Redirection directe via les callbacks des publishers)
-        self.create_subscription(Imu, '/olive/olixSense/x1/id001/imu', self.pub_imu.publish, qos_profile_sensor_data)
-        self.create_subscription(TwistStamped, '/olive/olixSense/x1/id001/velocity', self.pub_vel.publish, qos_profile_sensor_data)
-        self.create_subscription(AccelStamped, '/olive/olixSense/x1/id001/acceleration', self.pub_acc.publish, qos_profile_sensor_data)
-
-def main(args=None):
-    rclpy.init(args=args)
-    rclpy.spin(ImuRelay())
-    rclpy.shutdown()
-
-if __name__ == '__main__':
-    main()
 
 
 --------------------------------------------------
@@ -270,6 +143,12 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+echo "-> Désactivation du Reverse Path Filtering pour le routage asymétrique DDS..."
+sysctl -w net.ipv4.conf.all.rp_filter=2
+sysctl -w net.ipv4.conf.default.rp_filter=2
+sysctl -w net.ipv4.conf.enx_olive_cam.rp_filter=2
+sysctl -w net.ipv4.conf.enx_olive_imu.rp_filter=2
+
 echo "-> Optimisation des buffers de réception et d'émission (FastDDS / Video Stream)..."
 sysctl -w net.core.rmem_max=8388608
 sysctl -w net.core.rmem_default=8388608
@@ -284,7 +163,7 @@ IF_IMU1="enx_olive_imu" #"enxa21011e2ae4e"
 
 # Adresses IP statiques assignées au Jetson sur ces sous-réseaux
 IP_CAMERA="192.168.7.101/24"
-IP_IMU1="192.168.7.102/24"
+IP_IMU1="192.168.8.102/24"
 #IP_IMU2="192.168.7.103/24"
 #IP_IMU3="192.168.7.104/24"
 
@@ -313,9 +192,15 @@ configure_interface() {
 
     #Apply and activate the connection
     nmcli con up "$con_name" >/dev/null
+    
+    ip link set dev "$iface" mtu 8000
 
     echo "   [OK] $iface configured ($con_name)."
 }
+
+echo "-> Ajout des routes Multicast (ROS 2) pour les deux sous-réseaux..."
+ip route add 224.0.0.0/4 dev enx_olive_cam metric 100
+ip route add 224.0.0.0/4 dev enx_olive_imu metric 101
 
 # Application on sensors
 configure_interface $IF_CAMERA $IP_CAMERA
@@ -342,14 +227,12 @@ FICHIER : src/olive_networking/config/fastdds_profiles.xml
             <transport_descriptor>
                 <transport_id>udp_transport_olive</transport_id>
                 <type>UDPv4</type>
-                <sendBufferSize>4194304</sendBufferSize>
-                <receiveBufferSize>8388608</receiveBufferSize>
+                <sendBufferSize>8388608</sendBufferSize>
+                <receiveBufferSize>16777216</receiveBufferSize>
                 <interfaceWhiteList>
                     <address>127.0.0.1</address>
-                    <address>192.168.7.101</address> 
-                    <address>192.168.7.102</address>
-                    <address>10.0.0.1</address>
-                    <address>10.0.0.2</address>
+                    <address>192.168.7.101</address>  
+                    <address>192.168.8.102</address>
                     <address>192.168.0.105</address>
                 </interfaceWhiteList>
             </transport_descriptor>
@@ -1097,12 +980,12 @@ public:
     pub_imu_fused_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/fused", rclcpp::SensorDataQoS());
     
     sub_imu_ = this->create_subscription<sensor_msgs::msg::Imu>(
-      "/imu/data", rclcpp::SensorDataQoS(), 
+      "/olive/olixSense/x1/oliveimu/imu", rclcpp::SensorDataQoS(), 
       [this](sensor_msgs::msg::Imu::UniquePtr msg) {
           this->imuCallback(std::move(msg));
       });
 
-    pub_cam_synced_ = this->create_publisher<sensor_msgs::msg::CompressedImage>("/olive/camera/image_synced/compressed", rclcpp::SensorDataQoS());
+    pub_cam_synced_ = this->create_publisher<sensor_msgs::msg::CompressedImage>("/olivecam/compressed_synced", rclcpp::SensorDataQoS());
     
     sub_cam_ = this->create_subscription<sensor_msgs::msg::CompressedImage>(
       "/olive/camera/olivecam/image/compressed", rclcpp::SensorDataQoS(), 
@@ -1113,7 +996,7 @@ public:
     // ==============================================================================
     // 1. CAMÉRA : POSE & TWIST
     // ==============================================================================
-    pub_cam_pose_synced_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/olive/camera/olivecam/pose_synced", rclcpp::SensorDataQoS());
+    pub_cam_pose_synced_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/olivecam/pose_synced", rclcpp::SensorDataQoS());
     sub_cam_pose_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
       "/olive/camera/olivecam/pose", rclcpp::SensorDataQoS(), 
       [this](geometry_msgs::msg::PoseStamped::UniquePtr msg) { // <-- UniquePtr
@@ -1122,7 +1005,7 @@ public:
         pub_cam_pose_synced_->publish(std::move(msg)); // <-- std::move
       });
 
-    pub_cam_twist_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/olive/camera/olivecam/twist_synced", rclcpp::SensorDataQoS());
+    pub_cam_twist_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/olivecam/twist_synced", rclcpp::SensorDataQoS());
     sub_cam_twist_ = this->create_subscription<geometry_msgs::msg::TwistStamped>(
       "/olive/camera/olivecam/twist", rclcpp::SensorDataQoS(), 
       [this](geometry_msgs::msg::TwistStamped::UniquePtr msg) {
@@ -1134,7 +1017,7 @@ public:
     // ==============================================================================
     // 2. CAMÉRA : ACCÉLÉRATION & AHRS
     // ==============================================================================
-    pub_cam_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/olive/camera/olivecam/linear_acc_synced", rclcpp::SensorDataQoS());
+    pub_cam_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/olivecam/linear_acc_synced", rclcpp::SensorDataQoS());
     sub_cam_acc_ = this->create_subscription<geometry_msgs::msg::AccelStamped>(
       "/olive/camera/olivecam/linear_acc", rclcpp::SensorDataQoS(), 
       [this](geometry_msgs::msg::AccelStamped::UniquePtr msg) {
@@ -1143,7 +1026,7 @@ public:
         pub_cam_acc_synced_->publish(std::move(msg)); 
       });
 
-    pub_cam_ahrs_synced_ = this->create_publisher<sensor_msgs::msg::Imu>("/olive/camera/olivecam/filtered_ahrs_synced", rclcpp::SensorDataQoS());
+    pub_cam_ahrs_synced_ = this->create_publisher<sensor_msgs::msg::Imu>("/olivecam/filtered_ahrs_synced", rclcpp::SensorDataQoS());
     sub_cam_ahrs_ = this->create_subscription<sensor_msgs::msg::Imu>(
       "/olive/camera/olivecam/filtered_ahrs", rclcpp::SensorDataQoS(), 
         [this](sensor_msgs::msg::Imu::UniquePtr msg) {
@@ -1155,7 +1038,7 @@ public:
     // ==============================================================================
     // 3. CAMÉRA : INFO (REPÈRE OPTIQUE)
     // ==============================================================================
-    pub_cam_info_synced_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("/olive/camera/image_synced/camera_info", rclcpp::SensorDataQoS());
+    pub_cam_info_synced_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("/olivecam/camera_info_synced", rclcpp::SensorDataQoS());
     sub_cam_info_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
       "/olive/camera/olivecam/image/camera_info", rclcpp::SensorDataQoS(), 
         [this](sensor_msgs::msg::CameraInfo::UniquePtr msg) {
@@ -1167,18 +1050,18 @@ public:
     // ==============================================================================
     // 4. IMU : ACCÉLÉRATION & VITESSE
     // ==============================================================================
-    pub_imu_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/olive/olixSense/x1/id001/acceleration_synced", rclcpp::SensorDataQoS());
+    pub_imu_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/imu/acceleration_synced", rclcpp::SensorDataQoS());
     sub_imu_acc_ = this->create_subscription<geometry_msgs::msg::AccelStamped>(
-      "/olive/olixSense/x1/id001/acceleration", rclcpp::SensorDataQoS(), 
+      "/olive/olixSense/x1/oliveimu/acceleration", rclcpp::SensorDataQoS(), 
         [this](geometry_msgs::msg::AccelStamped::UniquePtr msg) {
         msg->header.stamp = applyImuOffset(msg->header.stamp); 
         msg->header.frame_id = "imu_link"; 
         pub_imu_acc_synced_->publish(std::move(msg)); 
       });
 
-    pub_imu_vel_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/olive/olixSense/x1/id001/velocity_synced", rclcpp::SensorDataQoS());
+    pub_imu_vel_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/imu/velocity_synced", rclcpp::SensorDataQoS());
     sub_imu_vel_ = this->create_subscription<geometry_msgs::msg::TwistStamped>(
-      "/olive/olixSense/x1/id001/velocity", rclcpp::SensorDataQoS(),
+      "/olive/olixSense/x1/oliveimu/velocity", rclcpp::SensorDataQoS(),
         [this](geometry_msgs::msg::TwistStamped::UniquePtr msg) {
         msg->header.stamp = applyImuOffset(msg->header.stamp); 
         msg->header.frame_id = "imu_link"; 
@@ -1440,12 +1323,12 @@ def generate_launch_description():
         '/olive/camera/image_synced/compressed',
         '/olive/camera/olivecam/image/camera_info',
         '/olive/camera/olivecam/filtered_ahrs',
-        '/olive/olixSense/x1/id001/velocity',
-        '/olive/olixSense/x1/id001/acceleration',
+        '/olive/olixSense/x1/oliveimu/velocity',
+        '/olive/olixSense/x1/oliveimu/acceleration',
         '/olive/camera/olivecam/pose',
         '/olive/camera/olivecam/twist',
         '/olive/camera/olivecam/linear_acc',
-        '/imu/data',
+        '/olive/olixSense/x1/oliveimu/imu',
         '/imu/fused',
         '/optical_flow/velocity',
         '/optical_flow/range',
@@ -1483,6 +1366,8 @@ import xacro
 from ament_index_python.packages import get_package_prefix
 
 def generate_launch_description():
+
+    SetEnvironmentVariable('ROS_DOMAIN_ID', '3')
        
     # Extraction des chemins des packages
     pkg_networking = get_package_share_directory('olive_networking')
@@ -1493,17 +1378,7 @@ def generate_launch_description():
     ekf_config = os.path.join(pkg_bringup, 'config', 'ekf.yaml')
     inekf_config = os.path.join(pkg_bringup, 'config', 'inekf.yaml')
     #fusion_config = os.path.join(pkg_bringup, 'config', 'fusioncore.yaml')
-    olive_bridge_config = os.path.join(pkg_bringup, 'config', 'olive_bridge.yaml')
     
-    # 1. Isolation réseau de l'IMU (Namespace + Relais)
-    # Exécution directe du script bash avec les privilèges sudo requis
-    pkg_networking_lib = os.path.join(get_package_prefix('olive_networking'), 'lib', 'olive_networking')
-    script_imu_path = os.path.join(pkg_networking_lib, 'setup_imu_namespace.sh')
-    
-    network_setup = ExecuteProcess(
-        cmd=['sudo', script_imu_path],
-        output='screen'
-    )
 
     # 2. Serveur d'allocation DroneCAN pour le Holybro H-Flow
     # Lancé via python3 directement depuis le dossier partagé pour éviter les conflits de binaires
@@ -1513,12 +1388,12 @@ def generate_launch_description():
         output='screen'
     )
 
-# --- MODIFICATION : Fusion des nœuds dans un conteneur unique Single-Threaded (Zéro-copie) ---
+    # --- MODIFICATION : Fusion des nœuds dans un conteneur unique Single-Threaded (Zéro-copie) ---
     sensor_processing_container = ComposableNodeContainer(
         name='sensor_processing_container',
         namespace='',
         package='rclcpp_components',
-        executable='component_container', # Utilisation de la version single-threaded plus légère
+        executable='component_container_mt', # Utilisation de la version single-threaded plus légère
         composable_node_descriptions=[
             # Composant 1 : Pont matériel DroneCAN
             ComposableNode(
@@ -1542,14 +1417,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 4. Pont de domaine pour la Caméra (Domaine 3 -> Domaine 0)
-    camera_bridge_node = Node(
-        package='domain_bridge',
-        executable='domain_bridge',
-        name='olive_camera_bridge',
-        arguments=[olive_bridge_config],
-        output='screen'
-    )
 
     # 5. Modèle URDF du Robot (Source de vérité géométrique unique - REP-105)
     xacro_file = os.path.join(pkg_desc, 'urdf', 'sensor_platform.urdf.xacro')
@@ -1620,9 +1487,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        network_setup,
         hflow_allocator,
-        camera_bridge_node,
         rsp_node,
         sensor_processing_container,
         #delayed_ekf,
@@ -1643,7 +1508,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     
     # 1. On s'assure d'être sur le domaine principal (0)
-    #set_domain_id = SetEnvironmentVariable('ROS_DOMAIN_ID', '0')
+    set_domain_id = SetEnvironmentVariable('ROS_DOMAIN_ID', '3')
 
     # 2. Arbre TF2 (REP-105)
     # L'optical flow regarde généralement vers le sol. 
@@ -1709,75 +1574,6 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-
---------------------------------------------------
-FICHIER : src/platform_bringup/launch/test_olix_cam.launch.py
---------------------------------------------------
-import os
-from ament_index_python.packages import get_package_share_directory
-from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch_ros.actions import Node
-
-def generate_launch_description():
-    
-    # 1. Inclusion de notre nœud pont (Domaine 3 -> Domaine 0)
-    bridge_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('platform_bringup'), 'launch', 'olive_bridge.launch.py'
-        )])
-    )
-
-    # 2. Arbre TF2 (Publication de la position de la caméra)
-    #static_tf_cam = Node(
-    #    package='tf2_ros',
-    #    executable='static_transform_publisher',
-    #    name='base_link_to_olive_cam',
-    #    arguments=['0.15', '0.0', '0.1', '0.0', '0.0', '0.0', 'base_link', 'olivecam_link'],
-    #    output='screen'
-    #)
-
-    # Retour SANS rviz2_node
-    return LaunchDescription([
-        bridge_launch,
-        #static_tf_cam
-    ])
-
-
---------------------------------------------------
-FICHIER : src/platform_bringup/launch/olive_bridge.launch.py
---------------------------------------------------
-import os
-from ament_index_python.packages import get_package_share_directory
-from launch import LaunchDescription
-from launch.actions import SetEnvironmentVariable
-from launch_ros.actions import Node
-
-def generate_launch_description():
-    config_file = os.path.join(
-        get_package_share_directory('platform_bringup'),
-        'config',
-        'olive_bridge.yaml'
-    )
-
-    # CRITIQUE : Désactiver le profil FastDDS global UNIQUEMENT pour le pont
-    # Cela permet au bridge de parler librement sur les Domaines 3 et 0
-    #reset_profile = SetEnvironmentVariable('FASTRTPS_DEFAULT_PROFILES_FILE', '')
-
-    domain_bridge_node = Node(
-        package='domain_bridge',
-        executable='domain_bridge',
-        name='olive_camera_bridge',
-        arguments=[config_file],
-        output='screen'
-    )
-
-    return LaunchDescription([
-        #reset_profile,
-        domain_bridge_node
-    ])
 
 
 --------------------------------------------------
@@ -1886,91 +1682,6 @@ def generate_launch_description():
 
 
 --------------------------------------------------
-FICHIER : src/platform_bringup/launch/test_olix_imu.launch.py
---------------------------------------------------
-import os
-from launch import LaunchDescription
-from launch.actions import SetEnvironmentVariable, ExecuteProcess
-from launch_ros.actions import Node
-
-def generate_launch_description():
-    
-    # 1. Configuration des variables d'environnement DDS et Domaine
-    #set_domain_id = SetEnvironmentVariable('ROS_DOMAIN_ID', '0') 
-    #set_fastdds_profile = SetEnvironmentVariable(
-    #    'FASTRTPS_DEFAULT_PROFILES_FILE', 
-    #    '/home/darts/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'
-    #)
-
-    # 2. Automatisation : Exécution du script réseau et du relais ROS 2 en arrière-plan
-    script_path = '/home/darts/sensor_platform_ws/src/olive_networking/scripts/setup_imu_namespace.sh'
-    network_setup = ExecuteProcess(
-        cmd=['sudo', script_path],
-        output='screen'
-    )
-
-    # 3. Arbre TF2 Statique (Convention REP-105)
-    #static_tf_imu = Node(
-    #    package='tf2_ros',
-    #    executable='static_transform_publisher',
-    #    name='base_link_to_olive_imu',
-    #    arguments=[
-    #        '--x', '0.0', '--y', '0.0', '--z', '0.05', 
-    #        '--roll', '0.0', '--pitch', '0.0', '--yaw', '0.0', 
-    #        '--frame-id', 'base_link', 
-    #        '--child-frame-id', 'id001_base_link'
-    #    ],
-    #    output='screen'
-    #)
-
-    return LaunchDescription([
-        #set_domain_id,
-        #set_fastdds_profile,
-        network_setup,
-        #static_tf_imu
-    ])
-
-
---------------------------------------------------
-FICHIER : src/platform_bringup/launch/test_sync.launch.py
---------------------------------------------------
-from launch import LaunchDescription
-from launch_ros.actions import Node, ComposableNodeContainer
-from launch_ros.descriptions import ComposableNode
-
-def generate_launch_description():
-    # C++ component container (high-performance, intra-process-ready)
-    sync_container = ComposableNodeContainer(
-        name='sensor_processing_container',
-        namespace='',
-        package='rclcpp_components',
-        executable='component_container',
-        composable_node_descriptions=[
-            ComposableNode(
-                package='platform_processing',
-                plugin='platform_processing::ImuSyncComponent',
-                name='imu_sync_node',
-                extra_arguments=[{'use_intra_process_comms': True}] 
-            )
-        ],
-        output='screen',
-    )
-
-    # Nœud Mock in Python
-    mock_node = Node(
-        package='platform_processing',
-        executable='mock_imu_node.py',
-        name='mock_imu_node',
-        output='screen'
-    )
-
-    return LaunchDescription([
-        sync_container,
-        mock_node
-    ])
-
-
---------------------------------------------------
 FICHIER : src/platform_bringup/config/ukf.yaml
 --------------------------------------------------
 ukf_filter_node:
@@ -1994,7 +1705,7 @@ ukf_filter_node:
                    false, false, false]
     
     # 2. Caméra Pose (Estimée par olixAI)
-    pose1: /olive/camera/olivecam/pose_synced
+    pose1: /olivecam/pose_synced
     pose1_config: [true,  true,  true,   # X, Y, Z
                    true,  true,  true,   # Roll, Pitch, Yaw
                    false, false, false,
@@ -2011,7 +1722,7 @@ ukf_filter_node:
                     false, false, false]
 
     # 2. Vitesse Native IMU (Estimée par olixAI)
-    twist1: /olive/olixSense/x1/id001/velocity_synced
+    twist1: /imu/velocity_synced
     twist1_config: [false, false, false,
                     false, false, false,
                     true,  true,  true,  # Vx, Vy, Vz
@@ -2028,7 +1739,7 @@ ukf_filter_node:
                   false, false, false]
     
     # 2. Accélération Native IMU (Isolée de la gravité)
-    imu1: /olive/olixSense/x1/id001/acceleration_synced
+    imu1: /imu/acceleration_synced
     imu1_config: [false, false, false,
                   false, false, false,
                   false, false, false,
@@ -2042,48 +1753,6 @@ ukf_filter_node:
                                           
                                           
                                           
-
-
---------------------------------------------------
-FICHIER : src/platform_bringup/config/olive_bridge.yaml
---------------------------------------------------
-name: olive_camera_domain_bridge
-
-topics:
-  /olive/camera/olivecam/image/compressed:
-    type: sensor_msgs/msg/CompressedImage
-    from_domain: 3
-    to_domain: 0
-    qos:
-      reliability: best_effort
-      durability: volatile
-      history: keep_last
-      depth: 5
-
-  /olive/camera/olivecam/image/camera_info:
-    type: sensor_msgs/msg/CameraInfo
-    from_domain: 3
-    to_domain: 0
-
-  /olive/camera/olivecam/filtered_ahrs:
-    type: sensor_msgs/msg/Imu
-    from_domain: 3
-    to_domain: 0
-    
-  /olive/camera/olivecam/pose:
-    type: geometry_msgs/msg/PoseStamped
-    from_domain: 3
-    to_domain: 0
-
-  /olive/camera/olivecam/twist:
-    type: geometry_msgs/msg/TwistStamped
-    from_domain: 3
-    to_domain: 0
-    
-  /olive/camera/olivecam/linear_acc:
-    type: geometry_msgs/msg/AccelStamped
-    from_domain: 3
-    to_domain: 0
 
 
 --------------------------------------------------
@@ -2167,10 +1836,10 @@ fusion_node:
     # Capteur principal 1
     imu.topic: "/imu/fused"
     # Capteur principal 2
-    odometry.topic: "/olive/camera/olivecam/twist_synced"
+    odometry.topic: "/olivecam/twist_synced"
     
     # FusionCore gère nativement l'ajout de capteurs secondaires par index
-    imu2.topic: "/olive/camera/olivecam/filtered_ahrs_synced"
+    imu2.topic: "/olivecam/filtered_ahrs_synced"
     odometry2.topic: "/optical_flow/velocity"
 
 
@@ -2183,10 +1852,10 @@ inekf_node:
     child_frame_id: "base_link"
     
     # L'InEKF préfère souvent le topic brut complet (ou AHRS filtré)
-    imu_topic: "/olive/camera/olivecam/filtered_ahrs_synced"
+    imu_topic: "/olivecam/filtered_ahrs_synced"
     
     # La vitesse est cruciale pour l'InEKF (souvent appelée "Kinematics" ou "Contact")
-    velocity_topic: "/olive/olixSense/x1/id001/velocity_synced"
+    velocity_topic: "/imu/velocity_synced"
     
     # Covariances sur l'Algèbre de Lie (à tuner obligatoirement)
     noise:

@@ -1,0 +1,487 @@
+[0.198s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.198s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72680e27d060>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72680e3fd750>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72680e3fd750>>)
+[0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.441s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/sensor_platform_ws'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(dronecan_env) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(dronecan_env) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(dronecan_env) ignored
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'ros'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['cmake', 'python']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'cmake'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'python'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extensions ['python_setup_py']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware) by extension 'python_setup_py'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/hardware/uavcan_bridge) by extension 'ros'
+[0.456s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hardware/uavcan_bridge' with type 'ros.ament_cmake' and name 'uavcan_bridge'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/olive_networking) by extension 'ros'
+[0.457s] DEBUG:colcon.colcon_core.package_identification:Package 'src/olive_networking' with type 'ros.ament_cmake' and name 'olive_networking'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_bringup) by extension 'ros'
+[0.457s] DEBUG:colcon.colcon_core.package_identification:Package 'src/platform_bringup' with type 'ros.ament_cmake' and name 'platform_bringup'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_description) by extension 'ros'
+[0.458s] DEBUG:colcon.colcon_core.package_identification:Package 'src/platform_description' with type 'ros.ament_cmake' and name 'platform_description'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extension 'ignore'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extension 'ignore_ament_install'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extensions ['colcon_pkg']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extension 'colcon_pkg'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_interfaces) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'src/platform_interfaces' with type 'ros.ament_cmake' and name 'platform_interfaces'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_processing) by extension 'ros'
+[0.461s] DEBUG:colcon.colcon_core.package_identification:Package 'src/platform_processing' with type 'ros.ament_cmake' and name 'platform_processing'
+[0.461s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.461s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.461s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.461s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.461s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.489s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/humble
+[0.490s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'cmake_args' from command line to 'None'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'cmake_target' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'cmake_clean_first' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'cmake_force_configure' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'ament_cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'olive_networking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.529s] DEBUG:colcon.colcon_core.verb:Building package 'olive_networking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/sensor_platform_ws/build/olive_networking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/sensor_platform_ws/install/olive_networking', 'merge_install': False, 'path': '/home/student/sensor_platform_ws/src/olive_networking', 'symlink_install': False, 'test_result_base': None}
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'cmake_target' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.529s] DEBUG:colcon.colcon_core.verb:Building package 'platform_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/sensor_platform_ws/build/platform_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/sensor_platform_ws/install/platform_bringup', 'merge_install': False, 'path': '/home/student/sensor_platform_ws/src/platform_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'cmake_target' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.530s] DEBUG:colcon.colcon_core.verb:Building package 'platform_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/sensor_platform_ws/build/platform_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/sensor_platform_ws/install/platform_description', 'merge_install': False, 'path': '/home/student/sensor_platform_ws/src/platform_description', 'symlink_install': False, 'test_result_base': None}
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.530s] DEBUG:colcon.colcon_core.verb:Building package 'platform_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/sensor_platform_ws/build/platform_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/sensor_platform_ws/install/platform_interfaces', 'merge_install': False, 'path': '/home/student/sensor_platform_ws/src/platform_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'cmake_target' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'cmake_clean_first' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'cmake_force_configure' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'ament_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'platform_processing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.530s] DEBUG:colcon.colcon_core.verb:Building package 'platform_processing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/sensor_platform_ws/build/platform_processing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/sensor_platform_ws/install/platform_processing', 'merge_install': False, 'path': '/home/student/sensor_platform_ws/src/platform_processing', 'symlink_install': False, 'test_result_base': None}
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'cmake_args' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'cmake_target' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'uavcan_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.531s] DEBUG:colcon.colcon_core.verb:Building package 'uavcan_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/sensor_platform_ws/build/uavcan_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/sensor_platform_ws/install/uavcan_bridge', 'merge_install': False, 'path': '/home/student/sensor_platform_ws/src/hardware/uavcan_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.531s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.532s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/sensor_platform_ws/src/olive_networking' with build type 'ament_cmake'
+[0.532s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/sensor_platform_ws/src/olive_networking'
+[0.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.534s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.534s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.542s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/sensor_platform_ws/src/platform_bringup' with build type 'ament_cmake'
+[0.543s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/sensor_platform_ws/src/platform_bringup'
+[0.543s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.543s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.547s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/sensor_platform_ws/src/platform_description' with build type 'ament_cmake'
+[0.548s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/sensor_platform_ws/src/platform_description'
+[0.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.548s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.556s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/sensor_platform_ws/src/platform_interfaces' with build type 'ament_cmake'
+[0.557s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/sensor_platform_ws/src/platform_interfaces'
+[0.557s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.557s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.565s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/sensor_platform_ws/src/platform_processing' with build type 'ament_cmake'
+[0.565s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/sensor_platform_ws/src/platform_processing'
+[0.566s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.566s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.570s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/sensor_platform_ws/src/hardware/uavcan_bridge' with build type 'ament_cmake'
+[0.570s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/sensor_platform_ws/src/hardware/uavcan_bridge'
+[0.571s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.571s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8
+[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_bringup -- -j8 -l8
+[0.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_description -- -j8 -l8
+[0.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_interfaces -- -j8 -l8
+[0.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[0.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_bringup -- -j8 -l8
+[0.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_bringup
+[0.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/olive_networking' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8
+[0.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/olive_networking
+[0.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_description -- -j8 -l8
+[0.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_description
+[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_interfaces -- -j8 -l8
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_interfaces
+[0.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(olive_networking)
+[0.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/olive_networking' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/olive_networking
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking' for CMake module files
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking' for CMake config files
+[0.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('olive_networking', 'cmake_prefix_path')
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/hook/cmake_prefix_path.ps1'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/hook/cmake_prefix_path.dsv'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/hook/cmake_prefix_path.sh'
+[0.731s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/lib'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/bin'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/lib/pkgconfig/olive_networking.pc'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/lib/python3.10/site-packages'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/bin'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.ps1'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.dsv'
+[0.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.sh'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.bash'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.zsh'
+[0.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/olive_networking/share/colcon-core/packages/olive_networking)
+[0.742s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(olive_networking)
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking' for CMake module files
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking' for CMake config files
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('olive_networking', 'cmake_prefix_path')
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/hook/cmake_prefix_path.ps1'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/hook/cmake_prefix_path.dsv'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/hook/cmake_prefix_path.sh'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/lib'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/bin'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/lib/pkgconfig/olive_networking.pc'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/lib/python3.10/site-packages'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/olive_networking/bin'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.dsv'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.sh'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.bash'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.zsh'
+[0.754s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/olive_networking/share/colcon-core/packages/olive_networking)
+[0.754s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_bringup)
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup' for CMake module files
+[0.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_bringup
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup' for CMake config files
+[0.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_bringup', 'cmake_prefix_path')
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/hook/cmake_prefix_path.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/hook/cmake_prefix_path.dsv'
+[0.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/hook/cmake_prefix_path.sh'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/bin'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/lib/pkgconfig/platform_bringup.pc'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/lib/python3.10/site-packages'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/bin'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.ps1'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.dsv'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.sh'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.bash'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.zsh'
+[0.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_bringup/share/colcon-core/packages/platform_bringup)
+[0.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_bringup)
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup' for CMake module files
+[0.766s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup' for CMake config files
+[0.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_bringup', 'cmake_prefix_path')
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/hook/cmake_prefix_path.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/hook/cmake_prefix_path.dsv'
+[0.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/hook/cmake_prefix_path.sh'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/bin'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/lib/pkgconfig/platform_bringup.pc'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/lib/python3.10/site-packages'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_bringup/bin'
+[0.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.ps1'
+[0.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.sh'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.bash'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.zsh'
+[0.776s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_bringup/share/colcon-core/packages/platform_bringup)
+[0.780s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_description)
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description' for CMake module files
+[0.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_description
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description' for CMake config files
+[0.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_description', 'cmake_prefix_path')
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/hook/cmake_prefix_path.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/hook/cmake_prefix_path.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/hook/cmake_prefix_path.sh'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/bin'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/lib/pkgconfig/platform_description.pc'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/lib/python3.10/site-packages'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/bin'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.ps1'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.sh'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.bash'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.zsh'
+[0.788s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_description/share/colcon-core/packages/platform_description)
+[0.788s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_description)
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description' for CMake module files
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description' for CMake config files
+[0.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_description', 'cmake_prefix_path')
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/hook/cmake_prefix_path.ps1'
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/hook/cmake_prefix_path.dsv'
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/hook/cmake_prefix_path.sh'
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/bin'
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/lib/pkgconfig/platform_description.pc'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/lib/python3.10/site-packages'
+[0.794s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_description/bin'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.ps1'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.dsv'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.sh'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.bash'
+[0.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.zsh'
+[0.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_description/share/colcon-core/packages/platform_description)
+[0.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_interfaces)
+[0.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_interfaces
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces' for CMake module files
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces' for CMake config files
+[0.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_interfaces', 'cmake_prefix_path')
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/hook/cmake_prefix_path.ps1'
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/hook/cmake_prefix_path.dsv'
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/hook/cmake_prefix_path.sh'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/bin'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/lib/pkgconfig/platform_interfaces.pc'
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/lib/python3.10/site-packages'
+[0.805s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/bin'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.ps1'
+[0.806s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.dsv'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.sh'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.bash'
+[0.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.zsh'
+[0.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_interfaces/share/colcon-core/packages/platform_interfaces)
+[0.808s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_interfaces)
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces' for CMake module files
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces' for CMake config files
+[0.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_interfaces', 'cmake_prefix_path')
+[0.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/hook/cmake_prefix_path.ps1'
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/hook/cmake_prefix_path.dsv'
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/hook/cmake_prefix_path.sh'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/bin'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/lib/pkgconfig/platform_interfaces.pc'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/lib/python3.10/site-packages'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_interfaces/bin'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.ps1'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.dsv'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.sh'
+[0.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.bash'
+[0.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.zsh'
+[0.815s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_interfaces/share/colcon-core/packages/platform_interfaces)
+[0.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[0.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge
+[0.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
+[0.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_processing
+[0.856s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_processing)
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing' for CMake module files
+[0.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/platform_processing' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_processing
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing' for CMake config files
+[0.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_processing', 'cmake_prefix_path')
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/cmake_prefix_path.ps1'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/cmake_prefix_path.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/cmake_prefix_path.sh'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/lib'
+[0.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_processing', 'ld_library_path_lib')
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/ld_library_path_lib.ps1'
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/ld_library_path_lib.dsv'
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/ld_library_path_lib.sh'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/bin'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/lib/pkgconfig/platform_processing.pc'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/lib/python3.10/site-packages'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/bin'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.sh'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.bash'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.zsh'
+[0.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_processing/share/colcon-core/packages/platform_processing)
+[0.869s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_processing)
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing' for CMake module files
+[0.872s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing' for CMake config files
+[0.873s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_processing', 'cmake_prefix_path')
+[0.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/cmake_prefix_path.ps1'
+[0.873s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/cmake_prefix_path.dsv'
+[0.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/cmake_prefix_path.sh'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/lib'
+[0.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_processing', 'ld_library_path_lib')
+[0.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/ld_library_path_lib.ps1'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/ld_library_path_lib.dsv'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/hook/ld_library_path_lib.sh'
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/bin'
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/lib/pkgconfig/platform_processing.pc'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/lib/python3.10/site-packages'
+[0.879s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/platform_processing/bin'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.ps1'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.dsv'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.sh'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.bash'
+[0.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.zsh'
+[0.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/platform_processing/share/colcon-core/packages/platform_processing)
+[0.885s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uavcan_bridge)
+[0.885s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge' for CMake module files
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge' for CMake config files
+[0.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('uavcan_bridge', 'cmake_prefix_path')
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/cmake_prefix_path.ps1'
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/cmake_prefix_path.dsv'
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/cmake_prefix_path.sh'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/lib'
+[0.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('uavcan_bridge', 'ld_library_path_lib')
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/ld_library_path_lib.ps1'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/ld_library_path_lib.dsv'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/ld_library_path_lib.sh'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/bin'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/lib/pkgconfig/uavcan_bridge.pc'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/lib/python3.10/site-packages'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/bin'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.ps1'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.dsv'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.sh'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.bash'
+[0.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.zsh'
+[0.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/uavcan_bridge/share/colcon-core/packages/uavcan_bridge)
+[0.894s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uavcan_bridge)
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge' for CMake module files
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge' for CMake config files
+[0.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('uavcan_bridge', 'cmake_prefix_path')
+[0.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/cmake_prefix_path.ps1'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/cmake_prefix_path.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/cmake_prefix_path.sh'
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/lib'
+[0.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('uavcan_bridge', 'ld_library_path_lib')
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/ld_library_path_lib.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/ld_library_path_lib.dsv'
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/hook/ld_library_path_lib.sh'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/bin'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/lib/pkgconfig/uavcan_bridge.pc'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/lib/python3.10/site-packages'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/student/sensor_platform_ws/install/uavcan_bridge/bin'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.ps1'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.dsv'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.sh'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.bash'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.zsh'
+[0.906s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/sensor_platform_ws/install/uavcan_bridge/share/colcon-core/packages/uavcan_bridge)
+[0.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.913s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.925s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.947s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.948s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/sensor_platform_ws/install/local_setup.ps1'
+[0.949s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/sensor_platform_ws/install/_local_setup_util_ps1.py'
+[0.950s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/sensor_platform_ws/install/setup.ps1'
+[0.954s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/sensor_platform_ws/install/local_setup.sh'
+[0.954s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/sensor_platform_ws/install/_local_setup_util_sh.py'
+[0.955s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/sensor_platform_ws/install/setup.sh'
+[0.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/sensor_platform_ws/install/local_setup.bash'
+[0.956s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/sensor_platform_ws/install/setup.bash'
+[0.960s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/sensor_platform_ws/install/local_setup.zsh'
+[0.960s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/sensor_platform_ws/install/setup.zsh'

@@ -1,9 +1,0 @@
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/uninstall.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/plateform_bringup_uninstall.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/test.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/edit_cache.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/rebuild_cache.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/list_install_components.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/install.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/install/local.dir
-/home/student/sensor_platform_ws/build/plateform_bringup/CMakeFiles/install/strip.dir

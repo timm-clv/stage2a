@@ -1,17 +1,12 @@
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/calibration_hardware.launch.py
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/can_allocator.py
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/offline_fusion.launch.py
-/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/olive_bridge.launch.py
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/record_dataset.launch.py
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/system.launch.py
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_hflow.launch.py
-/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_olix_cam.launch.py
-/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_olix_imu.launch.py
-/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_sync.launch.py
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/ekf.yaml
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/fusioncore.yaml
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/inekf.yaml
-/home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/olive_bridge.yaml
 /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/ukf.yaml
 /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/package_run_dependencies/platform_bringup
 /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/parent_prefix_path/platform_bringup

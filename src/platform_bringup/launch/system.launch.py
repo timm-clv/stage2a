@@ -8,6 +8,8 @@ import xacro
 from ament_index_python.packages import get_package_prefix
 
 def generate_launch_description():
+
+    SetEnvironmentVariable('ROS_DOMAIN_ID', '3')
        
     # Extraction des chemins des packages
     pkg_networking = get_package_share_directory('olive_networking')
@@ -18,17 +20,7 @@ def generate_launch_description():
     ekf_config = os.path.join(pkg_bringup, 'config', 'ekf.yaml')
     inekf_config = os.path.join(pkg_bringup, 'config', 'inekf.yaml')
     #fusion_config = os.path.join(pkg_bringup, 'config', 'fusioncore.yaml')
-    olive_bridge_config = os.path.join(pkg_bringup, 'config', 'olive_bridge.yaml')
     
-    # 1. Isolation réseau de l'IMU (Namespace + Relais)
-    # Exécution directe du script bash avec les privilèges sudo requis
-    pkg_networking_lib = os.path.join(get_package_prefix('olive_networking'), 'lib', 'olive_networking')
-    script_imu_path = os.path.join(pkg_networking_lib, 'setup_imu_namespace.sh')
-    
-    network_setup = ExecuteProcess(
-        cmd=['sudo', script_imu_path],
-        output='screen'
-    )
 
     # 2. Serveur d'allocation DroneCAN pour le Holybro H-Flow
     # Lancé via python3 directement depuis le dossier partagé pour éviter les conflits de binaires
@@ -38,12 +30,12 @@ def generate_launch_description():
         output='screen'
     )
 
-# --- MODIFICATION : Fusion des nœuds dans un conteneur unique Single-Threaded (Zéro-copie) ---
+    # --- MODIFICATION : Fusion des nœuds dans un conteneur unique Single-Threaded (Zéro-copie) ---
     sensor_processing_container = ComposableNodeContainer(
         name='sensor_processing_container',
         namespace='',
         package='rclcpp_components',
-        executable='component_container', # Utilisation de la version single-threaded plus légère
+        executable='component_container_mt', # Utilisation de la version single-threaded plus légère
         composable_node_descriptions=[
             # Composant 1 : Pont matériel DroneCAN
             ComposableNode(
@@ -67,14 +59,6 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 4. Pont de domaine pour la Caméra (Domaine 3 -> Domaine 0)
-    camera_bridge_node = Node(
-        package='domain_bridge',
-        executable='domain_bridge',
-        name='olive_camera_bridge',
-        arguments=[olive_bridge_config],
-        output='screen'
-    )
 
     # 5. Modèle URDF du Robot (Source de vérité géométrique unique - REP-105)
     xacro_file = os.path.join(pkg_desc, 'urdf', 'sensor_platform.urdf.xacro')
@@ -145,9 +129,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        network_setup,
         hflow_allocator,
-        camera_bridge_node,
         rsp_node,
         sensor_processing_container,
         #delayed_ekf,

@@ -10,6 +10,12 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+echo "-> Désactivation du Reverse Path Filtering pour le routage asymétrique DDS..."
+sysctl -w net.ipv4.conf.all.rp_filter=2
+sysctl -w net.ipv4.conf.default.rp_filter=2
+sysctl -w net.ipv4.conf.enx_olive_cam.rp_filter=2
+sysctl -w net.ipv4.conf.enx_olive_imu.rp_filter=2
+
 echo "-> Optimisation des buffers de réception et d'émission (FastDDS / Video Stream)..."
 sysctl -w net.core.rmem_max=8388608
 sysctl -w net.core.rmem_default=8388608
@@ -24,7 +30,7 @@ IF_IMU1="enx_olive_imu" #"enxa21011e2ae4e"
 
 # Adresses IP statiques assignées au Jetson sur ces sous-réseaux
 IP_CAMERA="192.168.7.101/24"
-IP_IMU1="192.168.7.102/24"
+IP_IMU1="192.168.8.102/24"
 #IP_IMU2="192.168.7.103/24"
 #IP_IMU3="192.168.7.104/24"
 
@@ -53,9 +59,15 @@ configure_interface() {
 
     #Apply and activate the connection
     nmcli con up "$con_name" >/dev/null
+    
+    ip link set dev "$iface" mtu 8000
 
     echo "   [OK] $iface configured ($con_name)."
 }
+
+echo "-> Ajout des routes Multicast (ROS 2) pour les deux sous-réseaux..."
+ip route add 224.0.0.0/4 dev enx_olive_cam metric 100
+ip route add 224.0.0.0/4 dev enx_olive_imu metric 101
 
 # Application on sensors
 configure_interface $IF_CAMERA $IP_CAMERA

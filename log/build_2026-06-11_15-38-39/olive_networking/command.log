@@ -1,4 +1,0 @@
-Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8
-Invoked command in '/home/student/sensor_platform_ws/build/olive_networking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8
-Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/olive_networking
-Invoked command in '/home/student/sensor_platform_ws/build/olive_networking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/olive_networking

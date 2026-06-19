@@ -1,1 +1,0 @@
-/home/student/sensor_platform_ws/build/plateform_bringup/ament_cmake_core/plateform_bringupConfig-version.cmake

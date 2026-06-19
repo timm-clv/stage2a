@@ -19,7 +19,7 @@ ukf_filter_node:
                    false, false, false]
     
     # 2. Caméra Pose (Estimée par olixAI)
-    pose1: /olive/camera/olivecam/pose_synced
+    pose1: /olivecam/pose_synced
     pose1_config: [true,  true,  true,   # X, Y, Z
                    true,  true,  true,   # Roll, Pitch, Yaw
                    false, false, false,
@@ -36,7 +36,7 @@ ukf_filter_node:
                     false, false, false]
 
     # 2. Vitesse Native IMU (Estimée par olixAI)
-    twist1: /olive/olixSense/x1/id001/velocity_synced
+    twist1: /imu/velocity_synced
     twist1_config: [false, false, false,
                     false, false, false,
                     true,  true,  true,  # Vx, Vy, Vz
@@ -53,7 +53,7 @@ ukf_filter_node:
                   false, false, false]
     
     # 2. Accélération Native IMU (Isolée de la gravité)
-    imu1: /olive/olixSense/x1/id001/acceleration_synced
+    imu1: /imu/acceleration_synced
     imu1_config: [false, false, false,
                   false, false, false,
                   false, false, false,

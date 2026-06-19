@@ -1,0 +1,71 @@
+[0.020s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/hardware/uavcan_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/uavcan_bridge
+[0.607s] -- The C compiler identification is GNU 11.4.0
+[0.607s] -- The CXX compiler identification is GNU 11.4.0
+[0.607s] -- Detecting C compiler ABI info
+[0.607s] -- Detecting C compiler ABI info - done
+[0.607s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.607s] -- Detecting C compile features
+[0.607s] -- Detecting C compile features - done
+[0.607s] -- Detecting CXX compiler ABI info
+[0.607s] -- Detecting CXX compiler ABI info - done
+[0.607s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.607s] -- Detecting CXX compile features
+[0.607s] -- Detecting CXX compile features - done
+[0.607s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.607s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.607s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.607s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.607s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.607s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.607s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.607s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.607s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.631s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.632s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.695s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.719s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.753s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.760s] -- Looking for pthread.h
+[0.866s] -- Looking for pthread.h - found
+[0.866s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.922s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.922s] -- Found Threads: TRUE  
+[0.962s] -- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.982s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.993s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.069s] -- Configuring done
+[1.079s] -- Generating done
+[1.084s] -- Build files have been written to: /home/student/sensor_platform_ws/build/uavcan_bridge
+[1.094s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/hardware/uavcan_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/uavcan_bridge
+[1.095s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[1.132s] [ 60%] [32mBuilding CXX object CMakeFiles/dronecan_bridge_node.dir/rclcpp_components/node_main_dronecan_bridge_node.cpp.o[0m
+[1.133s] [ 60%] [32mBuilding CXX object CMakeFiles/dronecan_bridge_component.dir/src/dronecan_bridge_component.cpp.o[0m
+[1.133s] [ 60%] [32mBuilding C object CMakeFiles/dronecan_bridge_component.dir/include/libcanard/canard.c.o[0m
+[5.730s] [ 80%] [32m[1mLinking CXX executable dronecan_bridge_node[0m
+[5.896s] [ 80%] Built target dronecan_bridge_node
+[8.023s] [100%] [32m[1mLinking CXX shared library libdronecan_bridge_component.so[0m
+[9.146s] [100%] Built target dronecan_bridge_component
+[9.183s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
+[9.184s] Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge
+[9.192s] -- Install configuration: ""
+[9.193s] -- Execute custom install script
+[9.193s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/uavcan_bridge/dronecan_bridge_node
+[9.204s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/libdronecan_bridge_component.so
+[9.210s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/package_run_dependencies/uavcan_bridge
+[9.218s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/parent_prefix_path/uavcan_bridge
+[9.229s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.sh
+[9.235s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.dsv
+[9.242s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.sh
+[9.260s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.dsv
+[9.280s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.bash
+[9.289s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.sh
+[9.303s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.zsh
+[9.326s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.dsv
+[9.350s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.dsv
+[9.377s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/packages/uavcan_bridge
+[9.397s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/rclcpp_components/uavcan_bridge
+[9.413s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.445s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig.cmake
+[9.463s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig-version.cmake
+[9.478s] -- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.xml
+[9.486s] Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/sensor_platform_ws/build/uavcan_bridge

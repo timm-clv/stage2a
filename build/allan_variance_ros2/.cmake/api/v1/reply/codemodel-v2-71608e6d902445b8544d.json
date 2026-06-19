@@ -1,0 +1,149 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e6b79aef28d9cc7f22b0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						6
+					]
+				},
+				{
+					"build" : "_deps/rerun_sdk-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.rerun_sdk-build-aaca2740d159446e3caa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "allan_variance_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "rerun_sdk",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "allan_variance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-allan_variance-b6ef8d5813a0dc28d2b9.json",
+					"name" : "allan_variance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "allan_variance_ros2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-allan_variance_ros2-9d5d760321070a31780e.json",
+					"name" : "allan_variance_ros2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "allan_variance_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-allan_variance_ros2_uninstall-d87c8ab9b892839ff8dd.json",
+					"name" : "allan_variance_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "arrow_cpp::@9027447480fbc0937424",
+					"jsonFile" : "target-arrow_cpp-d2bf8edec2e3f40c703d.json",
+					"name" : "arrow_cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "plot_imu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-plot_imu-790cdb68c467f01491a0.json",
+					"name" : "plot_imu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rerun_sdk::@9027447480fbc0937424",
+					"jsonFile" : "target-rerun_sdk-e67bd86ceb3ee7ef19d3.json",
+					"name" : "rerun_sdk",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-31c02ea872e474e882f8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/student/sensor_platform_ws/build/allan_variance_ros2",
+		"source" : "/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,36 @@
+-- Downloading...
+   dst='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/src/13.0.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/xtensor-stack/xsimd/archive/13.0.0.tar.gz'
+-- [download 1% complete]
+-- [download 5% complete]
+-- [download 14% complete]
+-- [download 16% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 29% complete]
+-- [download 35% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 56% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 68% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 90% complete]
+-- [download 94% complete]
+-- [download 96% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/src/13.0.0.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/src/13.0.0.tar.gz'
+     dst='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/src/xsimd_ep'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done

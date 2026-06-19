@@ -1,0 +1,1 @@
+Invoking command in '/home/student/sensor_platform_ws/build/ntrip': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/ntrip -- -j8 -l8

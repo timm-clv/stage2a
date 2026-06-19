@@ -8,8 +8,8 @@ fusion_node:
     # Capteur principal 1
     imu.topic: "/imu/fused"
     # Capteur principal 2
-    odometry.topic: "/olive/camera/olivecam/twist_synced"
+    odometry.topic: "/olivecam/twist_synced"
     
     # FusionCore gère nativement l'ajout de capteurs secondaires par index
-    imu2.topic: "/olive/camera/olivecam/filtered_ahrs_synced"
+    imu2.topic: "/olivecam/filtered_ahrs_synced"
     odometry2.topic: "/optical_flow/velocity"

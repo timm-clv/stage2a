@@ -1,0 +1,31 @@
+Determining if the _M_ARM64 exist failed with the following output:
+Change Dir: /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e7a68/fast && gmake[3]: Entering directory '/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e7a68.dir/build.make CMakeFiles/cmTC_e7a68.dir/build
+gmake[4]: Entering directory '/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e7a68.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -fdiagnostics-color=always  -fPIE -std=c++17 -o CMakeFiles/cmTC_e7a68.dir/CheckSymbolExists.cxx.o -c /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_ARM64[m[K’ was not declared in this scope
+    7 |   return ((int*)(&[01;31m[K_M_ARM64[m[K))[argc];
+      |                   [01;31m[K^~~~~~~~[m[K
+gmake[4]: *** [CMakeFiles/cmTC_e7a68.dir/build.make:78: CMakeFiles/cmTC_e7a68.dir/CheckSymbolExists.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_e7a68/fast] Error 2
+gmake[3]: Leaving directory '/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp'
+
+
+File /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _M_ARM64
+  return ((int*)(&_M_ARM64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

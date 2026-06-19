@@ -31,12 +31,12 @@ public:
     pub_imu_fused_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/fused", rclcpp::SensorDataQoS());
     
     sub_imu_ = this->create_subscription<sensor_msgs::msg::Imu>(
-      "/imu/data", rclcpp::SensorDataQoS(), 
+      "/olive/olixSense/x1/oliveimu/imu", rclcpp::SensorDataQoS(), 
       [this](sensor_msgs::msg::Imu::UniquePtr msg) {
           this->imuCallback(std::move(msg));
       });
 
-    pub_cam_synced_ = this->create_publisher<sensor_msgs::msg::CompressedImage>("/olive/camera/image_synced/compressed", rclcpp::SensorDataQoS());
+    pub_cam_synced_ = this->create_publisher<sensor_msgs::msg::CompressedImage>("/olivecam/compressed_synced", rclcpp::SensorDataQoS());
     
     sub_cam_ = this->create_subscription<sensor_msgs::msg::CompressedImage>(
       "/olive/camera/olivecam/image/compressed", rclcpp::SensorDataQoS(), 
@@ -47,7 +47,7 @@ public:
     // ==============================================================================
     // 1. CAMÉRA : POSE & TWIST
     // ==============================================================================
-    pub_cam_pose_synced_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/olive/camera/olivecam/pose_synced", rclcpp::SensorDataQoS());
+    pub_cam_pose_synced_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/olivecam/pose_synced", rclcpp::SensorDataQoS());
     sub_cam_pose_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
       "/olive/camera/olivecam/pose", rclcpp::SensorDataQoS(), 
       [this](geometry_msgs::msg::PoseStamped::UniquePtr msg) { // <-- UniquePtr
@@ -56,7 +56,7 @@ public:
         pub_cam_pose_synced_->publish(std::move(msg)); // <-- std::move
       });
 
-    pub_cam_twist_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/olive/camera/olivecam/twist_synced", rclcpp::SensorDataQoS());
+    pub_cam_twist_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/olivecam/twist_synced", rclcpp::SensorDataQoS());
     sub_cam_twist_ = this->create_subscription<geometry_msgs::msg::TwistStamped>(
       "/olive/camera/olivecam/twist", rclcpp::SensorDataQoS(), 
       [this](geometry_msgs::msg::TwistStamped::UniquePtr msg) {
@@ -68,7 +68,7 @@ public:
     // ==============================================================================
     // 2. CAMÉRA : ACCÉLÉRATION & AHRS
     // ==============================================================================
-    pub_cam_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/olive/camera/olivecam/linear_acc_synced", rclcpp::SensorDataQoS());
+    pub_cam_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/olivecam/linear_acc_synced", rclcpp::SensorDataQoS());
     sub_cam_acc_ = this->create_subscription<geometry_msgs::msg::AccelStamped>(
       "/olive/camera/olivecam/linear_acc", rclcpp::SensorDataQoS(), 
       [this](geometry_msgs::msg::AccelStamped::UniquePtr msg) {
@@ -77,7 +77,7 @@ public:
         pub_cam_acc_synced_->publish(std::move(msg)); 
       });
 
-    pub_cam_ahrs_synced_ = this->create_publisher<sensor_msgs::msg::Imu>("/olive/camera/olivecam/filtered_ahrs_synced", rclcpp::SensorDataQoS());
+    pub_cam_ahrs_synced_ = this->create_publisher<sensor_msgs::msg::Imu>("/olivecam/filtered_ahrs_synced", rclcpp::SensorDataQoS());
     sub_cam_ahrs_ = this->create_subscription<sensor_msgs::msg::Imu>(
       "/olive/camera/olivecam/filtered_ahrs", rclcpp::SensorDataQoS(), 
         [this](sensor_msgs::msg::Imu::UniquePtr msg) {
@@ -89,7 +89,7 @@ public:
     // ==============================================================================
     // 3. CAMÉRA : INFO (REPÈRE OPTIQUE)
     // ==============================================================================
-    pub_cam_info_synced_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("/olive/camera/image_synced/camera_info", rclcpp::SensorDataQoS());
+    pub_cam_info_synced_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("/olivecam/camera_info_synced", rclcpp::SensorDataQoS());
     sub_cam_info_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
       "/olive/camera/olivecam/image/camera_info", rclcpp::SensorDataQoS(), 
         [this](sensor_msgs::msg::CameraInfo::UniquePtr msg) {
@@ -101,18 +101,18 @@ public:
     // ==============================================================================
     // 4. IMU : ACCÉLÉRATION & VITESSE
     // ==============================================================================
-    pub_imu_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/olive/olixSense/x1/id001/acceleration_synced", rclcpp::SensorDataQoS());
+    pub_imu_acc_synced_ = this->create_publisher<geometry_msgs::msg::AccelStamped>("/imu/acceleration_synced", rclcpp::SensorDataQoS());
     sub_imu_acc_ = this->create_subscription<geometry_msgs::msg::AccelStamped>(
-      "/olive/olixSense/x1/id001/acceleration", rclcpp::SensorDataQoS(), 
+      "/olive/olixSense/x1/oliveimu/acceleration", rclcpp::SensorDataQoS(), 
         [this](geometry_msgs::msg::AccelStamped::UniquePtr msg) {
         msg->header.stamp = applyImuOffset(msg->header.stamp); 
         msg->header.frame_id = "imu_link"; 
         pub_imu_acc_synced_->publish(std::move(msg)); 
       });
 
-    pub_imu_vel_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/olive/olixSense/x1/id001/velocity_synced", rclcpp::SensorDataQoS());
+    pub_imu_vel_synced_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("/imu/velocity_synced", rclcpp::SensorDataQoS());
     sub_imu_vel_ = this->create_subscription<geometry_msgs::msg::TwistStamped>(
-      "/olive/olixSense/x1/id001/velocity", rclcpp::SensorDataQoS(),
+      "/olive/olixSense/x1/oliveimu/velocity", rclcpp::SensorDataQoS(),
         [this](geometry_msgs::msg::TwistStamped::UniquePtr msg) {
         msg->header.stamp = applyImuOffset(msg->header.stamp); 
         msg->header.frame_id = "imu_link"; 

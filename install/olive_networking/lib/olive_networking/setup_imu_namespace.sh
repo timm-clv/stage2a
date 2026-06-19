@@ -1,1 +1,0 @@
-/home/student/sensor_platform_ws/src/olive_networking/scripts/setup_imu_namespace.sh

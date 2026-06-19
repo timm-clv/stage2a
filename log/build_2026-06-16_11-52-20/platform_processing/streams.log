@@ -1,6 +1,0 @@
-[0.021s] Invoking command in '/home/student/sensor_platform_ws/build/platform_processing': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_processing -- -j8 -l8
-[0.073s] [35m[1mConsolidate compiler generated dependencies of target imu_sync_component[0m
-[0.102s] [ 50%] Built target imu_sync_node
-[0.107s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o[0m
-[23.767s] [100%] [32m[1mLinking CXX shared library libimu_sync_component.so[0m
-[23.974s] [100%] Built target imu_sync_component

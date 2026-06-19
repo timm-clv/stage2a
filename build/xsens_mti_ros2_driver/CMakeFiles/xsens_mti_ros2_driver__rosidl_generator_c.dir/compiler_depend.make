@@ -40,7 +40,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -48,9 +47,7 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/xsens_mti_ros2_driver/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__struct.h \
@@ -67,8 +64,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
-  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/allocator.h \
   /opt/ros/humble/include/rcutils/rcutils/macros.h \
   /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h \
@@ -81,8 +76,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
   /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
@@ -128,7 +121,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -136,9 +128,7 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/xsens_mti_ros2_driver/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.h \
@@ -151,8 +141,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
-  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/allocator.h \
   /opt/ros/humble/include/rcutils/rcutils/macros.h \
   /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h \
@@ -165,8 +153,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsen
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
   /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h
@@ -182,8 +168,6 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -194,10 +178,6 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.h:
 
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
 /usr/include/strings.h:
 
 /usr/include/stdio.h:
@@ -205,8 +185,6 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.h:
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/assert.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -228,6 +206,10 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -248,10 +230,6 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
@@ -263,6 +241,8 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/rosidl_generator_c__visibility_cont
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -296,6 +276,10 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/rosidl_generator_c__visibility_cont
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -306,43 +290,19 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__struct.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -351,3 +311,15 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__struct.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/usr/include/assert.h:

@@ -1,0 +1,501 @@
+[0.000000] (-) TimerEvent: {}
+[0.006372] (olive_networking) JobQueued: {'identifier': 'olive_networking', 'dependencies': OrderedDict()}
+[0.007502] (platform_bringup) JobQueued: {'identifier': 'platform_bringup', 'dependencies': OrderedDict()}
+[0.007527] (platform_description) JobQueued: {'identifier': 'platform_description', 'dependencies': OrderedDict()}
+[0.007543] (platform_interfaces) JobQueued: {'identifier': 'platform_interfaces', 'dependencies': OrderedDict()}
+[0.007558] (platform_processing) JobQueued: {'identifier': 'platform_processing', 'dependencies': OrderedDict()}
+[0.007573] (uavcan_bridge) JobQueued: {'identifier': 'uavcan_bridge', 'dependencies': OrderedDict()}
+[0.007587] (olive_networking) JobStarted: {'identifier': 'olive_networking'}
+[0.011164] (platform_bringup) JobStarted: {'identifier': 'platform_bringup'}
+[0.021985] (platform_description) JobStarted: {'identifier': 'platform_description'}
+[0.025523] (platform_interfaces) JobStarted: {'identifier': 'platform_interfaces'}
+[0.035944] (platform_processing) JobStarted: {'identifier': 'platform_processing'}
+[0.046077] (uavcan_bridge) JobStarted: {'identifier': 'uavcan_bridge'}
+[0.055179] (olive_networking) JobProgress: {'identifier': 'olive_networking', 'progress': 'cmake'}
+[0.055634] (olive_networking) JobProgress: {'identifier': 'olive_networking', 'progress': 'build'}
+[0.056161] (olive_networking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/sensor_platform_ws/build/olive_networking', '--', '-j8', '-l8'], 'cwd': '/home/student/sensor_platform_ws/build/olive_networking', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/olive_networking'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.062140] (platform_bringup) JobProgress: {'identifier': 'platform_bringup', 'progress': 'cmake'}
+[0.062573] (platform_bringup) JobProgress: {'identifier': 'platform_bringup', 'progress': 'build'}
+[0.062754] (platform_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/sensor_platform_ws/build/platform_bringup', '--', '-j8', '-l8'], 'cwd': '/home/student/sensor_platform_ws/build/platform_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.070993] (platform_description) JobProgress: {'identifier': 'platform_description', 'progress': 'cmake'}
+[0.071128] (platform_description) JobProgress: {'identifier': 'platform_description', 'progress': 'build'}
+[0.071153] (platform_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/sensor_platform_ws/build/platform_description', '--', '-j8', '-l8'], 'cwd': '/home/student/sensor_platform_ws/build/platform_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.075843] (platform_interfaces) JobProgress: {'identifier': 'platform_interfaces', 'progress': 'cmake'}
+[0.075885] (platform_interfaces) JobProgress: {'identifier': 'platform_interfaces', 'progress': 'build'}
+[0.075905] (platform_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/sensor_platform_ws/build/platform_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/student/sensor_platform_ws/build/platform_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.078167] (platform_processing) JobProgress: {'identifier': 'platform_processing', 'progress': 'cmake'}
+[0.082283] (platform_processing) JobProgress: {'identifier': 'platform_processing', 'progress': 'build'}
+[0.082330] (platform_processing) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/sensor_platform_ws/build/platform_processing', '--', '-j8', '-l8'], 'cwd': '/home/student/sensor_platform_ws/build/platform_processing', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_processing'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.096137] (uavcan_bridge) JobProgress: {'identifier': 'uavcan_bridge', 'progress': 'cmake'}
+[0.096215] (uavcan_bridge) JobProgress: {'identifier': 'uavcan_bridge', 'progress': 'build'}
+[0.096236] (uavcan_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/sensor_platform_ws/build/uavcan_bridge', '--', '-j8', '-l8'], 'cwd': '/home/student/sensor_platform_ws/build/uavcan_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/uavcan_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100115] (-) TimerEvent: {}
+[0.131405] (platform_description) CommandEnded: {'returncode': 0}
+[0.136883] (platform_description) JobProgress: {'identifier': 'platform_description', 'progress': 'install'}
+[0.148003] (platform_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/sensor_platform_ws/build/platform_description'], 'cwd': '/home/student/sensor_platform_ws/build/platform_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.153906] (platform_interfaces) CommandEnded: {'returncode': 0}
+[0.154239] (platform_interfaces) JobProgress: {'identifier': 'platform_interfaces', 'progress': 'install'}
+[0.154264] (platform_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/sensor_platform_ws/build/platform_interfaces'], 'cwd': '/home/student/sensor_platform_ws/build/platform_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.161028] (platform_bringup) CommandEnded: {'returncode': 0}
+[0.164365] (platform_bringup) JobProgress: {'identifier': 'platform_bringup', 'progress': 'install'}
+[0.164399] (platform_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/sensor_platform_ws/build/platform_bringup'], 'cwd': '/home/student/sensor_platform_ws/build/platform_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.164723] (platform_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.164825] (platform_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.164896] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/urdf/sensor_platform.urdf.xacro\n'}
+[0.164953] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/launch/display.launch.py\n'}
+[0.165011] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/package_run_dependencies/platform_description\n'}
+[0.165064] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/parent_prefix_path/platform_description\n'}
+[0.165116] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/ament_prefix_path.sh\n'}
+[0.165167] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/ament_prefix_path.dsv\n'}
+[0.165219] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/path.sh\n'}
+[0.165270] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/environment/path.dsv\n'}
+[0.165321] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.bash\n'}
+[0.165375] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.sh\n'}
+[0.165426] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.zsh\n'}
+[0.169840] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/local_setup.dsv\n'}
+[0.169936] (platform_description) StdoutLine: {'line': b'-- Symlinking: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.dsv\n'}
+[0.169997] (platform_processing) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/imu_sync_component.dir/src/imu_sync_component.cpp.o\x1b[0m\n'}
+[0.171831] (platform_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.171937] (platform_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.171993] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/package_run_dependencies/platform_interfaces\n'}
+[0.172046] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/parent_prefix_path/platform_interfaces\n'}
+[0.172108] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/ament_prefix_path.sh\n'}
+[0.172167] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.172225] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/path.sh\n'}
+[0.172282] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/environment/path.dsv\n'}
+[0.172339] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.bash\n'}
+[0.172395] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.sh\n'}
+[0.172576] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.zsh\n'}
+[0.172628] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/local_setup.dsv\n'}
+[0.172678] (platform_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.dsv\n'}
+[0.172728] (olive_networking) CommandEnded: {'returncode': 0}
+[0.176203] (olive_networking) JobProgress: {'identifier': 'olive_networking', 'progress': 'install'}
+[0.176259] (olive_networking) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/sensor_platform_ws/build/olive_networking'], 'cwd': '/home/student/sensor_platform_ws/build/olive_networking', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/olive_networking'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.177799] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/ament_index/resource_index/packages/platform_description\n'}
+[0.177935] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/cmake/platform_descriptionConfig.cmake\n'}
+[0.178002] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/cmake/platform_descriptionConfig-version.cmake\n'}
+[0.178061] (platform_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_description/share/platform_description/package.xml\n'}
+[0.184159] (platform_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.188334] (platform_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.188664] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/calibration_hardware.launch.py\n'}
+[0.188742] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/can_allocator.py\n'}
+[0.188807] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/offline_fusion.launch.py\n'}
+[0.188947] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/record_dataset.launch.py\n'}
+[0.189054] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/system.launch.py\n'}
+[0.189116] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_hflow.launch.py\n'}
+[0.189177] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/ekf.yaml\n'}
+[0.189238] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/fusioncore.yaml\n'}
+[0.189298] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/inekf.yaml\n'}
+[0.189359] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/ukf.yaml\n'}
+[0.194573] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/package_run_dependencies/platform_bringup\n'}
+[0.194646] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/parent_prefix_path/platform_bringup\n'}
+[0.194703] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/ament_prefix_path.sh\n'}
+[0.194756] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/ament_prefix_path.dsv\n'}
+[0.194808] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/path.sh\n'}
+[0.194878] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/path.dsv\n'}
+[0.194932] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.bash\n'}
+[0.194983] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.sh\n'}
+[0.195034] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.zsh\n'}
+[0.195085] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.dsv\n'}
+[0.195136] (platform_bringup) StdoutLine: {'line': b'-- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.dsv\n'}
+[0.195188] (platform_description) CommandEnded: {'returncode': 0}
+[0.195440] (uavcan_bridge) StdoutLine: {'line': b'[ 60%] Built target dronecan_bridge_component\n'}
+[0.195531] (olive_networking) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.195605] (olive_networking) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.195658] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/udev/99-olive-networking.rules\n'}
+[0.195710] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/lib/olive_networking/scripts/olive_network_configuration.sh\n'}
+[0.195761] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/config/fastdds_profiles.xml\n'}
+[0.195811] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/package_run_dependencies/olive_networking\n'}
+[0.195871] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/ament_index/resource_index/packages/platform_interfaces\n'}
+[0.195930] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/cmake/platform_interfacesConfig.cmake\n'}
+[0.195981] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/cmake/platform_interfacesConfig-version.cmake\n'}
+[0.196031] (platform_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_interfaces/share/platform_interfaces/package.xml\n'}
+[0.196081] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/parent_prefix_path/olive_networking\n'}
+[0.196136] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/ament_prefix_path.sh\n'}
+[0.196187] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/ament_prefix_path.dsv\n'}
+[0.196237] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/path.sh\n'}
+[0.196286] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/environment/path.dsv\n'}
+[0.196335] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.bash\n'}
+[0.196384] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.sh\n'}
+[0.196434] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.zsh\n'}
+[0.196483] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/local_setup.dsv\n'}
+[0.196532] (olive_networking) StdoutLine: {'line': b'-- Symlinking: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.dsv\n'}
+[0.196582] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/packages/platform_bringup\n'}
+[0.196636] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/cmake/platform_bringupConfig.cmake\n'}
+[0.196686] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/cmake/platform_bringupConfig-version.cmake\n'}
+[0.196736] (platform_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.xml\n'}
+[0.205708] (-) TimerEvent: {}
+[0.225846] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/packages/olive_networking\n'}
+[0.225968] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/cmake/olive_networkingConfig.cmake\n'}
+[0.226027] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/cmake/olive_networkingConfig-version.cmake\n'}
+[0.226081] (olive_networking) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/package.xml\n'}
+[0.226134] (platform_description) JobEnded: {'identifier': 'platform_description', 'rc': 0}
+[0.226389] (uavcan_bridge) StdoutLine: {'line': b'[100%] Built target dronecan_bridge_node\n'}
+[0.231957] (platform_interfaces) CommandEnded: {'returncode': 0}
+[0.252788] (platform_interfaces) JobEnded: {'identifier': 'platform_interfaces', 'rc': 0}
+[0.253210] (platform_bringup) CommandEnded: {'returncode': 0}
+[0.279975] (platform_bringup) JobEnded: {'identifier': 'platform_bringup', 'rc': 0}
+[0.280240] (olive_networking) CommandEnded: {'returncode': 0}
+[0.298393] (olive_networking) JobEnded: {'identifier': 'olive_networking', 'rc': 0}
+[0.299126] (uavcan_bridge) CommandEnded: {'returncode': 0}
+[0.299599] (uavcan_bridge) JobProgress: {'identifier': 'uavcan_bridge', 'progress': 'install'}
+[0.299792] (uavcan_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/sensor_platform_ws/build/uavcan_bridge'], 'cwd': '/home/student/sensor_platform_ws/build/uavcan_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/uavcan_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.305783] (-) TimerEvent: {}
+[0.310718] (uavcan_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.314224] (uavcan_bridge) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.314458] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/uavcan_bridge/dronecan_bridge_node\n'}
+[0.314657] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/lib/libdronecan_bridge_component.so\n'}
+[0.314806] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/package_run_dependencies/uavcan_bridge\n'}
+[0.314947] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/parent_prefix_path/uavcan_bridge\n'}
+[0.315081] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.sh\n'}
+[0.315195] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/ament_prefix_path.dsv\n'}
+[0.315317] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.sh\n'}
+[0.315434] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/environment/path.dsv\n'}
+[0.315551] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.bash\n'}
+[0.315665] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.sh\n'}
+[0.315780] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.zsh\n'}
+[0.315908] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/local_setup.dsv\n'}
+[0.318852] (uavcan_bridge) StdoutLine: {'line': b'-- Symlinking: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.dsv\n'}
+[0.333110] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/packages/uavcan_bridge\n'}
+[0.333280] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/ament_index/resource_index/rclcpp_components/uavcan_bridge\n'}
+[0.333370] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.336616] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig.cmake\n'}
+[0.336731] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/cmake/uavcan_bridgeConfig-version.cmake\n'}
+[0.336788] (uavcan_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/uavcan_bridge/share/uavcan_bridge/package.xml\n'}
+[0.344840] (uavcan_bridge) CommandEnded: {'returncode': 0}
+[0.375548] (uavcan_bridge) JobEnded: {'identifier': 'uavcan_bridge', 'rc': 0}
+[0.405876] (-) TimerEvent: {}
+[0.506121] (-) TimerEvent: {}
+[0.606376] (-) TimerEvent: {}
+[0.706634] (-) TimerEvent: {}
+[0.806869] (-) TimerEvent: {}
+[0.907180] (-) TimerEvent: {}
+[1.007485] (-) TimerEvent: {}
+[1.107790] (-) TimerEvent: {}
+[1.208109] (-) TimerEvent: {}
+[1.309906] (-) TimerEvent: {}
+[1.410200] (-) TimerEvent: {}
+[1.510512] (-) TimerEvent: {}
+[1.611615] (-) TimerEvent: {}
+[1.711927] (-) TimerEvent: {}
+[1.812263] (-) TimerEvent: {}
+[1.912664] (-) TimerEvent: {}
+[2.013885] (-) TimerEvent: {}
+[2.114142] (-) TimerEvent: {}
+[2.214871] (-) TimerEvent: {}
+[2.316867] (-) TimerEvent: {}
+[2.417109] (-) TimerEvent: {}
+[2.517350] (-) TimerEvent: {}
+[2.617657] (-) TimerEvent: {}
+[2.717997] (-) TimerEvent: {}
+[2.818442] (-) TimerEvent: {}
+[2.918828] (-) TimerEvent: {}
+[3.021878] (-) TimerEvent: {}
+[3.122126] (-) TimerEvent: {}
+[3.223868] (-) TimerEvent: {}
+[3.324110] (-) TimerEvent: {}
+[3.424349] (-) TimerEvent: {}
+[3.526864] (-) TimerEvent: {}
+[3.629896] (-) TimerEvent: {}
+[3.730158] (-) TimerEvent: {}
+[3.830449] (-) TimerEvent: {}
+[3.930661] (-) TimerEvent: {}
+[4.030871] (-) TimerEvent: {}
+[4.131119] (-) TimerEvent: {}
+[4.231358] (-) TimerEvent: {}
+[4.334229] (-) TimerEvent: {}
+[4.434453] (-) TimerEvent: {}
+[4.536860] (-) TimerEvent: {}
+[4.637083] (-) TimerEvent: {}
+[4.737317] (-) TimerEvent: {}
+[4.837553] (-) TimerEvent: {}
+[4.937833] (-) TimerEvent: {}
+[5.038085] (-) TimerEvent: {}
+[5.138384] (-) TimerEvent: {}
+[5.238643] (-) TimerEvent: {}
+[5.338866] (-) TimerEvent: {}
+[5.439174] (-) TimerEvent: {}
+[5.541865] (-) TimerEvent: {}
+[5.642108] (-) TimerEvent: {}
+[5.742356] (-) TimerEvent: {}
+[5.842631] (-) TimerEvent: {}
+[5.942924] (-) TimerEvent: {}
+[6.043174] (-) TimerEvent: {}
+[6.143416] (-) TimerEvent: {}
+[6.243657] (-) TimerEvent: {}
+[6.343864] (-) TimerEvent: {}
+[6.444099] (-) TimerEvent: {}
+[6.544347] (-) TimerEvent: {}
+[6.646001] (-) TimerEvent: {}
+[6.746316] (-) TimerEvent: {}
+[6.846616] (-) TimerEvent: {}
+[6.946921] (-) TimerEvent: {}
+[7.047158] (-) TimerEvent: {}
+[7.147466] (-) TimerEvent: {}
+[7.247694] (-) TimerEvent: {}
+[7.347945] (-) TimerEvent: {}
+[7.448174] (-) TimerEvent: {}
+[7.549936] (-) TimerEvent: {}
+[7.650178] (-) TimerEvent: {}
+[7.750416] (-) TimerEvent: {}
+[7.850736] (-) TimerEvent: {}
+[7.951045] (-) TimerEvent: {}
+[8.051273] (-) TimerEvent: {}
+[8.151499] (-) TimerEvent: {}
+[8.254867] (-) TimerEvent: {}
+[8.355108] (-) TimerEvent: {}
+[8.455339] (-) TimerEvent: {}
+[8.555572] (-) TimerEvent: {}
+[8.655813] (-) TimerEvent: {}
+[8.756063] (-) TimerEvent: {}
+[8.856382] (-) TimerEvent: {}
+[8.956627] (-) TimerEvent: {}
+[9.056868] (-) TimerEvent: {}
+[9.157120] (-) TimerEvent: {}
+[9.258904] (-) TimerEvent: {}
+[9.359152] (-) TimerEvent: {}
+[9.459398] (-) TimerEvent: {}
+[9.559653] (-) TimerEvent: {}
+[9.665873] (-) TimerEvent: {}
+[9.766121] (-) TimerEvent: {}
+[9.866363] (-) TimerEvent: {}
+[9.966608] (-) TimerEvent: {}
+[10.066858] (-) TimerEvent: {}
+[10.167097] (-) TimerEvent: {}
+[10.267338] (-) TimerEvent: {}
+[10.367582] (-) TimerEvent: {}
+[10.467824] (-) TimerEvent: {}
+[10.568063] (-) TimerEvent: {}
+[10.668299] (-) TimerEvent: {}
+[10.768538] (-) TimerEvent: {}
+[10.868786] (-) TimerEvent: {}
+[10.969043] (-) TimerEvent: {}
+[11.069281] (-) TimerEvent: {}
+[11.169520] (-) TimerEvent: {}
+[11.269768] (-) TimerEvent: {}
+[11.370032] (-) TimerEvent: {}
+[11.470272] (-) TimerEvent: {}
+[11.570523] (-) TimerEvent: {}
+[11.670772] (-) TimerEvent: {}
+[11.772985] (-) TimerEvent: {}
+[11.873229] (-) TimerEvent: {}
+[11.973554] (-) TimerEvent: {}
+[12.073871] (-) TimerEvent: {}
+[12.175872] (-) TimerEvent: {}
+[12.276982] (-) TimerEvent: {}
+[12.377226] (-) TimerEvent: {}
+[12.477466] (-) TimerEvent: {}
+[12.577709] (-) TimerEvent: {}
+[12.679008] (-) TimerEvent: {}
+[12.781874] (-) TimerEvent: {}
+[12.882136] (-) TimerEvent: {}
+[12.982389] (-) TimerEvent: {}
+[13.082640] (-) TimerEvent: {}
+[13.182873] (-) TimerEvent: {}
+[13.283128] (-) TimerEvent: {}
+[13.383409] (-) TimerEvent: {}
+[13.483673] (-) TimerEvent: {}
+[13.583879] (-) TimerEvent: {}
+[13.684633] (-) TimerEvent: {}
+[13.784927] (-) TimerEvent: {}
+[13.885252] (-) TimerEvent: {}
+[13.985584] (-) TimerEvent: {}
+[14.085866] (-) TimerEvent: {}
+[14.186102] (-) TimerEvent: {}
+[14.286345] (-) TimerEvent: {}
+[14.386588] (-) TimerEvent: {}
+[14.486832] (-) TimerEvent: {}
+[14.587067] (-) TimerEvent: {}
+[14.691864] (-) TimerEvent: {}
+[14.792101] (-) TimerEvent: {}
+[14.892368] (-) TimerEvent: {}
+[14.992672] (-) TimerEvent: {}
+[15.092865] (-) TimerEvent: {}
+[15.193101] (-) TimerEvent: {}
+[15.293335] (-) TimerEvent: {}
+[15.395863] (-) TimerEvent: {}
+[15.496087] (-) TimerEvent: {}
+[15.596312] (-) TimerEvent: {}
+[15.696545] (-) TimerEvent: {}
+[15.796773] (-) TimerEvent: {}
+[15.897005] (-) TimerEvent: {}
+[15.997230] (-) TimerEvent: {}
+[16.097465] (-) TimerEvent: {}
+[16.197702] (-) TimerEvent: {}
+[16.299406] (-) TimerEvent: {}
+[16.399643] (-) TimerEvent: {}
+[16.499870] (-) TimerEvent: {}
+[16.600102] (-) TimerEvent: {}
+[16.700333] (-) TimerEvent: {}
+[16.800587] (-) TimerEvent: {}
+[16.900860] (-) TimerEvent: {}
+[17.001090] (-) TimerEvent: {}
+[17.101321] (-) TimerEvent: {}
+[17.201548] (-) TimerEvent: {}
+[17.301785] (-) TimerEvent: {}
+[17.402016] (-) TimerEvent: {}
+[17.502251] (-) TimerEvent: {}
+[17.602481] (-) TimerEvent: {}
+[17.705961] (-) TimerEvent: {}
+[17.806191] (-) TimerEvent: {}
+[17.906433] (-) TimerEvent: {}
+[18.006668] (-) TimerEvent: {}
+[18.106866] (-) TimerEvent: {}
+[18.207112] (-) TimerEvent: {}
+[18.307353] (-) TimerEvent: {}
+[18.407603] (-) TimerEvent: {}
+[18.507870] (-) TimerEvent: {}
+[18.608106] (-) TimerEvent: {}
+[18.708345] (-) TimerEvent: {}
+[18.808590] (-) TimerEvent: {}
+[18.908842] (-) TimerEvent: {}
+[19.009094] (-) TimerEvent: {}
+[19.109357] (-) TimerEvent: {}
+[19.209606] (-) TimerEvent: {}
+[19.309860] (-) TimerEvent: {}
+[19.410109] (-) TimerEvent: {}
+[19.510359] (-) TimerEvent: {}
+[19.611867] (-) TimerEvent: {}
+[19.713871] (-) TimerEvent: {}
+[19.814108] (-) TimerEvent: {}
+[19.914341] (-) TimerEvent: {}
+[20.014571] (-) TimerEvent: {}
+[20.114806] (-) TimerEvent: {}
+[20.215048] (-) TimerEvent: {}
+[20.316895] (-) TimerEvent: {}
+[20.417134] (-) TimerEvent: {}
+[20.518863] (-) TimerEvent: {}
+[20.621863] (-) TimerEvent: {}
+[20.724865] (-) TimerEvent: {}
+[20.825101] (-) TimerEvent: {}
+[20.925345] (-) TimerEvent: {}
+[21.025576] (-) TimerEvent: {}
+[21.125805] (-) TimerEvent: {}
+[21.226057] (-) TimerEvent: {}
+[21.326310] (-) TimerEvent: {}
+[21.426544] (-) TimerEvent: {}
+[21.526767] (-) TimerEvent: {}
+[21.626996] (-) TimerEvent: {}
+[21.727215] (-) TimerEvent: {}
+[21.827444] (-) TimerEvent: {}
+[21.929864] (-) TimerEvent: {}
+[22.030094] (-) TimerEvent: {}
+[22.130392] (-) TimerEvent: {}
+[22.230636] (-) TimerEvent: {}
+[22.330864] (-) TimerEvent: {}
+[22.431097] (-) TimerEvent: {}
+[22.531323] (-) TimerEvent: {}
+[22.631567] (-) TimerEvent: {}
+[22.731798] (-) TimerEvent: {}
+[22.832036] (-) TimerEvent: {}
+[22.932261] (-) TimerEvent: {}
+[23.032488] (-) TimerEvent: {}
+[23.132718] (-) TimerEvent: {}
+[23.235869] (-) TimerEvent: {}
+[23.336109] (-) TimerEvent: {}
+[23.436348] (-) TimerEvent: {}
+[23.536589] (-) TimerEvent: {}
+[23.636825] (-) TimerEvent: {}
+[23.737053] (-) TimerEvent: {}
+[23.837274] (-) TimerEvent: {}
+[23.937496] (-) TimerEvent: {}
+[24.037719] (-) TimerEvent: {}
+[24.137957] (-) TimerEvent: {}
+[24.238874] (-) TimerEvent: {}
+[24.340869] (-) TimerEvent: {}
+[24.441099] (-) TimerEvent: {}
+[24.541330] (-) TimerEvent: {}
+[24.643867] (-) TimerEvent: {}
+[24.744164] (-) TimerEvent: {}
+[24.844475] (-) TimerEvent: {}
+[24.944790] (-) TimerEvent: {}
+[25.045040] (-) TimerEvent: {}
+[25.145349] (-) TimerEvent: {}
+[25.245661] (-) TimerEvent: {}
+[25.345959] (-) TimerEvent: {}
+[25.446183] (-) TimerEvent: {}
+[25.546410] (-) TimerEvent: {}
+[25.646643] (-) TimerEvent: {}
+[25.747863] (-) TimerEvent: {}
+[25.848304] (-) TimerEvent: {}
+[25.948529] (-) TimerEvent: {}
+[26.048759] (-) TimerEvent: {}
+[26.149080] (-) TimerEvent: {}
+[26.249386] (-) TimerEvent: {}
+[26.352000] (-) TimerEvent: {}
+[26.452871] (-) TimerEvent: {}
+[26.553106] (-) TimerEvent: {}
+[26.655873] (-) TimerEvent: {}
+[26.756118] (-) TimerEvent: {}
+[26.856359] (-) TimerEvent: {}
+[26.956596] (-) TimerEvent: {}
+[27.056837] (-) TimerEvent: {}
+[27.157074] (-) TimerEvent: {}
+[27.257311] (-) TimerEvent: {}
+[27.357555] (-) TimerEvent: {}
+[27.457805] (-) TimerEvent: {}
+[27.558064] (-) TimerEvent: {}
+[27.658318] (-) TimerEvent: {}
+[27.758572] (-) TimerEvent: {}
+[27.860866] (-) TimerEvent: {}
+[27.961178] (-) TimerEvent: {}
+[28.061519] (-) TimerEvent: {}
+[28.161878] (-) TimerEvent: {}
+[28.262212] (-) TimerEvent: {}
+[28.362518] (-) TimerEvent: {}
+[28.463514] (-) TimerEvent: {}
+[28.564010] (-) TimerEvent: {}
+[28.664891] (-) TimerEvent: {}
+[28.767867] (-) TimerEvent: {}
+[28.862379] (platform_processing) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libimu_sync_component.so\x1b[0m\n'}
+[28.869863] (-) TimerEvent: {}
+[28.970103] (-) TimerEvent: {}
+[29.070374] (-) TimerEvent: {}
+[29.170798] (-) TimerEvent: {}
+[29.273871] (-) TimerEvent: {}
+[29.374099] (-) TimerEvent: {}
+[29.474372] (-) TimerEvent: {}
+[29.574841] (-) TimerEvent: {}
+[29.675092] (-) TimerEvent: {}
+[29.775417] (-) TimerEvent: {}
+[29.875723] (-) TimerEvent: {}
+[29.976060] (-) TimerEvent: {}
+[30.078964] (-) TimerEvent: {}
+[30.179209] (-) TimerEvent: {}
+[30.279449] (-) TimerEvent: {}
+[30.381536] (-) TimerEvent: {}
+[30.481804] (-) TimerEvent: {}
+[30.583870] (-) TimerEvent: {}
+[30.685859] (-) TimerEvent: {}
+[30.786867] (-) TimerEvent: {}
+[30.887101] (-) TimerEvent: {}
+[30.955269] (platform_processing) StdoutLine: {'line': b'[ 50%] Built target imu_sync_component\n'}
+[30.975942] (platform_processing) StdoutLine: {'line': b'[100%] Built target imu_sync_node\n'}
+[30.989976] (platform_processing) CommandEnded: {'returncode': 0}
+[30.990313] (-) TimerEvent: {}
+[30.990416] (platform_processing) JobProgress: {'identifier': 'platform_processing', 'progress': 'install'}
+[30.990440] (platform_processing) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/sensor_platform_ws/build/platform_processing'], 'cwd': '/home/student/sensor_platform_ws/build/platform_processing', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'student'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('SYSTEMD_EXEC_PID', '34544'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/student-HP-Z2-Tower-G4-Workstation:@/tmp/.ICE-unix/2240,unix/student-HP-Z2-Tower-G4-Workstation:/tmp/.ICE-unix/2240'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/student/sensor_platform_ws/src/olive_networking/config/fastdds_profiles.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3e350a01_86f8_4395_b706_bbfcfb1c1b4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/sensor_platform_ws/build/platform_processing'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[30.996627] (platform_processing) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.998362] (platform_processing) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.998603] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/lib/platform_processing/imu_sync_node\n'}
+[30.998812] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/lib/libimu_sync_component.so\n'}
+[31.001856] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/lib/platform_processing/mock_imu_node.py\n'}
+[31.001929] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/package_run_dependencies/platform_processing\n'}
+[31.001987] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/parent_prefix_path/platform_processing\n'}
+[31.002041] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/ament_prefix_path.sh\n'}
+[31.002124] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/ament_prefix_path.dsv\n'}
+[31.002183] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/path.sh\n'}
+[31.002267] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/environment/path.dsv\n'}
+[31.002388] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.bash\n'}
+[31.002522] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.sh\n'}
+[31.002649] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.zsh\n'}
+[31.002777] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/local_setup.dsv\n'}
+[31.002883] (platform_processing) StdoutLine: {'line': b'-- Symlinking: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.dsv\n'}
+[31.016043] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/packages/platform_processing\n'}
+[31.016208] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/ament_index/resource_index/rclcpp_components/platform_processing\n'}
+[31.016303] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/cmake/platform_processingConfig.cmake\n'}
+[31.016393] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/cmake/platform_processingConfig-version.cmake\n'}
+[31.016505] (platform_processing) StdoutLine: {'line': b'-- Up-to-date symlink: /home/student/sensor_platform_ws/install/platform_processing/share/platform_processing/package.xml\n'}
+[31.017966] (platform_processing) CommandEnded: {'returncode': 0}
+[31.044198] (platform_processing) JobEnded: {'identifier': 'platform_processing', 'rc': 0}
+[31.044881] (-) EventReactorShutdown: {}

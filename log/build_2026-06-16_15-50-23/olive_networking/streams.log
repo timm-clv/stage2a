@@ -1,0 +1,1 @@
+[0.019s] Invoking command in '/home/student/sensor_platform_ws/build/olive_networking': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/olive_networking -- -j8 -l8

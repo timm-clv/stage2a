@@ -1,8 +1,0 @@
-[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:209 (message):
-  ament_cmake_symlink_install_programs() can't find
-  '/home/student/sensor_platform_ws/src/platform_processing/scripts/mock_imu_node.py'
-Call Stack (most recent call first):
-  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:325 (ament_cmake_symlink_install_programs)
-  cmake_install.cmake:46 (include)
-
-[0m

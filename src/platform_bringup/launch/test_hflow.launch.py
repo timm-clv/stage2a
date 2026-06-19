@@ -6,7 +6,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     
     # 1. On s'assure d'être sur le domaine principal (0)
-    #set_domain_id = SetEnvironmentVariable('ROS_DOMAIN_ID', '0')
+    set_domain_id = SetEnvironmentVariable('ROS_DOMAIN_ID', '3')
 
     # 2. Arbre TF2 (REP-105)
     # L'optical flow regarde généralement vers le sol. 

@@ -1,0 +1,61 @@
+[0.021s] Invoking command in '/home/student/sensor_platform_ws/build/platform_bringup': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera/lib:/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/student/sensor_platform_ws/src/platform_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/platform_bringup
+[0.118s] -- The C compiler identification is GNU 11.4.0
+[0.250s] -- The CXX compiler identification is GNU 11.4.0
+[0.269s] -- Detecting C compiler ABI info
+[0.393s] -- Detecting C compiler ABI info - done
+[0.400s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.401s] -- Detecting C compile features
+[0.401s] -- Detecting C compile features - done
+[0.406s] -- Detecting CXX compiler ABI info
+[0.538s] -- Detecting CXX compiler ABI info - done
+[0.555s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.555s] -- Detecting CXX compile features
+[0.555s] -- Detecting CXX compile features - done
+[0.582s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.948s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.072s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.106s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.263s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.269s] -- Added test 'lint_cmake' to check CMake code style
+[1.269s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.270s] -- Added test 'xmllint' to check XML markup files
+[1.276s] -- Configuring done
+[1.283s] -- Generating done
+[1.283s] -- Build files have been written to: /home/student/sensor_platform_ws/build/platform_bringup
+[1.295s] Invoked command in '/home/student/sensor_platform_ws/build/platform_bringup' returned '0': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera/lib:/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/student/sensor_platform_ws/src/platform_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/platform_bringup
+[1.295s] Invoking command in '/home/student/sensor_platform_ws/build/platform_bringup': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera/lib:/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_bringup -- -j8 -l8
+[1.365s] Invoked command in '/home/student/sensor_platform_ws/build/platform_bringup' returned '0': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera/lib:/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_bringup -- -j8 -l8
+[1.365s] Invoking command in '/home/student/sensor_platform_ws/build/platform_bringup': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera/lib:/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_bringup
+[1.377s] -- Install configuration: ""
+[1.377s] -- Execute custom install script
+[1.378s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/calibration_hardware.launch.py
+[1.395s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/can_allocator.py
+[1.412s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/offline_fusion.launch.py
+[1.429s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/olive_bridge.launch.py
+[1.445s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/record_dataset.launch.py
+[1.462s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/system.launch.py
+[1.483s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_hflow.launch.py
+[1.497s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_olix_cam.launch.py
+[1.515s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_olix_imu.launch.py
+[1.533s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/launch/test_sync.launch.py
+[1.549s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/ekf.yaml
+[1.567s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/fusioncore.yaml
+[1.584s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/inekf.yaml
+[1.601s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/olive_bridge.yaml
+[1.619s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/config/ukf.yaml
+[1.634s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/package_run_dependencies/platform_bringup
+[1.650s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/parent_prefix_path/platform_bringup
+[1.672s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/ament_prefix_path.sh
+[1.688s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/ament_prefix_path.dsv
+[1.697s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/path.sh
+[1.706s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/environment/path.dsv
+[1.716s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.bash
+[1.725s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.sh
+[1.735s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.zsh
+[1.744s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/local_setup.dsv
+[1.754s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.dsv
+[1.763s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/ament_index/resource_index/packages/platform_bringup
+[1.774s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/cmake/platform_bringupConfig.cmake
+[1.783s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/cmake/platform_bringupConfig-version.cmake
+[1.793s] -- Symlinking: /home/student/sensor_platform_ws/install/platform_bringup/share/platform_bringup/package.xml
+[1.807s] Invoked command in '/home/student/sensor_platform_ws/build/platform_bringup' returned '0': AMENT_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/sensor_platform_ws/install/realsense2_camera:/home/student/sensor_platform_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/student/sensor_platform_ws/install/realsense2_camera/lib:/home/student/sensor_platform_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/sensor_platform_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/student/sensor_platform_ws/build/platform_bringup

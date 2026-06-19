@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/sensor_platform_ws/build/allan_variance_ros2/allan_variance" "/home/student/sensor_platform_ws/build/allan_variance_ros2/plot_imu" "TARGETS" "allan_variance" "plot_imu" "DESTINATION" "lib/allan_variance_ros2")

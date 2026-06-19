@@ -318,8 +318,8 @@ message(STATUS "Execute custom install script")
 # install(FILES "rules/99-olive-networking.rules" "DESTINATION" "share/olive_networking/udev")
 ament_cmake_symlink_install_files("/home/student/sensor_platform_ws/src/olive_networking" FILES "rules/99-olive-networking.rules" "DESTINATION" "share/olive_networking/udev")
 
-# install(PROGRAMS "scripts/olive_network_configuration.sh" "scripts/setup_imu_namespace.sh" "scripts/imu_relay.py" "DESTINATION" "lib/olive_networking/scripts")
-ament_cmake_symlink_install_programs("/home/student/sensor_platform_ws/src/olive_networking" PROGRAMS "scripts/olive_network_configuration.sh" "scripts/setup_imu_namespace.sh" "scripts/imu_relay.py" "DESTINATION" "lib/olive_networking/scripts")
+# install(PROGRAMS "scripts/olive_network_configuration.sh" "DESTINATION" "lib/olive_networking/scripts")
+ament_cmake_symlink_install_programs("/home/student/sensor_platform_ws/src/olive_networking" PROGRAMS "scripts/olive_network_configuration.sh" "DESTINATION" "lib/olive_networking/scripts")
 
 # install(DIRECTORY "config" "DESTINATION" "share/olive_networking")
 ament_cmake_symlink_install_directory("/home/student/sensor_platform_ws/src/olive_networking" DIRECTORY "config" "DESTINATION" "share/olive_networking")

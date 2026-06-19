@@ -6,5 +6,5 @@ CXX_DEFINES = -DFASTCDR_DYN_LINK -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPES
 
 CXX_INCLUDES = -I/home/student/sensor_platform_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_cpp -I/home/student/sensor_platform_ws/src/hardware/xsens_mti_driver/src/xsens_mti_ros2_driver/include -I/home/student/sensor_platform_ws/build/xsens_mti_ros2_driver/rosidl_generator_cpp -I/home/student/sensor_platform_ws/src/hardware/xsens_mti_driver/src/xsens_mti_ros2_driver/lib/xspublic -I/usr/include/eigen3 -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wall -Wextra -Wpedantic -Wredundant-decls -std=gnu++14
+CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -Wredundant-decls -std=gnu++14
 

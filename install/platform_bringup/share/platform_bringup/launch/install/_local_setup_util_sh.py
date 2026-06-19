@@ -1,1 +1,0 @@
-/home/student/sensor_platform_ws/src/platform_bringup/launch/install/_local_setup_util_sh.py

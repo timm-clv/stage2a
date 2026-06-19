@@ -33,8 +33,6 @@ install(FILES
 # Rendre le script exécutable et l'installer dans le répertoire attendu
 install(PROGRAMS
   scripts/olive_network_configuration.sh
-  scripts/setup_imu_namespace.sh
-  scripts/imu_relay.py
   DESTINATION lib/${PROJECT_NAME}/scripts
 )
 

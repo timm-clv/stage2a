@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-925613c3c73f421b07de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "platform_processing",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_sync_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_sync_component-449e7908bb7d77fcf4cf.json",
+					"name" : "imu_sync_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_sync_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_sync_node-49a44b7eabbafcd0a24b.json",
+					"name" : "imu_sync_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "platform_processing_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-platform_processing_uninstall-9066a370a0ace5a3d201.json",
+					"name" : "platform_processing_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-884d78694c55ea6507a5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/student/sensor_platform_ws/build/platform_processing",
+		"source" : "/home/student/sensor_platform_ws/src/platform_processing"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

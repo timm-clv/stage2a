@@ -1,9 +1,0 @@
-[ 40%] Built target dronecan_bridge_node
-[ 60%] [32mBuilding CXX object CMakeFiles/dronecan_bridge_component.dir/src/dronecan_bridge_component.cpp.o[0m
-[01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/src/dronecan_bridge_component.cpp:[m[K In member function ‘[01m[Kvoid uavcan_bridge::DronecanBridgeComponent::can_rx_loop()[m[K’:
-[01m[K/home/student/sensor_platform_ws/src/hardware/uavcan_bridge/src/dronecan_bridge_component.cpp:188:25:[m[K [01;31m[Kerror: [m[K‘[01m[KcanardGetStats[m[K’ was not declared in this scope
-  188 |                     if ([01;31m[KcanardGetStats[m[K(&canard_).peak_usage_bytes > sizeof(canard_memory_pool_) * 0.8) {
-      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/dronecan_bridge_component.dir/build.make:76: CMakeFiles/dronecan_bridge_component.dir/src/dronecan_bridge_component.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dronecan_bridge_component.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

@@ -1,7 +1,5 @@
 /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/udev/99-olive-networking.rules
 /home/student/sensor_platform_ws/install/olive_networking/lib/olive_networking/scripts/olive_network_configuration.sh
-/home/student/sensor_platform_ws/install/olive_networking/lib/olive_networking/scripts/setup_imu_namespace.sh
-/home/student/sensor_platform_ws/install/olive_networking/lib/olive_networking/scripts/imu_relay.py
 /home/student/sensor_platform_ws/install/olive_networking/share/olive_networking/config/fastdds_profiles.xml
 /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/package_run_dependencies/olive_networking
 /home/student/sensor_platform_ws/install/olive_networking/share/ament_index/resource_index/parent_prefix_path/olive_networking

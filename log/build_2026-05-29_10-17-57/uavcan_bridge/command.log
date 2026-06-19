@@ -1,2 +1,0 @@
-Invoking command in '/home/student/sensor_platform_ws/build/uavcan_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8
-Invoked command in '/home/student/sensor_platform_ws/build/uavcan_bridge' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/uavcan_bridge -- -j8 -l8

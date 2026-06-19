@@ -4,10 +4,10 @@ inekf_node:
     child_frame_id: "base_link"
     
     # L'InEKF préfère souvent le topic brut complet (ou AHRS filtré)
-    imu_topic: "/olive/camera/olivecam/filtered_ahrs_synced"
+    imu_topic: "/olivecam/filtered_ahrs_synced"
     
     # La vitesse est cruciale pour l'InEKF (souvent appelée "Kinematics" ou "Contact")
-    velocity_topic: "/olive/olixSense/x1/id001/velocity_synced"
+    velocity_topic: "/imu/velocity_synced"
     
     # Covariances sur l'Algèbre de Lie (à tuner obligatoirement)
     noise:

@@ -1,0 +1,434 @@
+[0.019s] Invoking command in '/home/student/sensor_platform_ws/build/allan_variance_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/allan_variance_ros2
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.138s] -- The CXX compiler identification is GNU 11.4.0
+[0.142s] -- Detecting C compiler ABI info
+[0.201s] -- Detecting C compiler ABI info - done
+[0.208s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.209s] -- Detecting C compile features
+[0.209s] -- Detecting C compile features - done
+[0.212s] -- Detecting CXX compiler ABI info
+[0.292s] -- Detecting CXX compiler ABI info - done
+[0.296s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.296s] -- Detecting CXX compile features
+[0.298s] -- Detecting CXX compile features - done
+[0.299s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.453s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.525s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.542s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.571s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.574s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.580s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.589s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.600s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.632s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.634s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.696s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.713s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.745s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.753s] -- Looking for pthread.h
+[0.818s] -- Looking for pthread.h - found
+[0.818s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.879s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.880s] -- Found Threads: TRUE  
+[0.922s] -- Found rosbag2_cpp: 0.15.16 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+[0.952s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[0.958s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[35.135s] [0mCompiler: GNU 11.4.0 (/usr/bin/c++)[0m
+[35.218s] -- Rerun SDK install version: 0.33.0
+[35.846s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[36.022s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[36.022s] -- Found OpenMP: TRUE (found version "4.5")  
+[36.022s] -- OpenMP found will try to link!
+[36.282s] -- Configuring done
+[36.440s] -- Generating done
+[36.452s] -- Build files have been written to: /home/student/sensor_platform_ws/build/allan_variance_ros2
+[36.479s] Invoked command in '/home/student/sensor_platform_ws/build/allan_variance_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/sensor_platform_ws/install/allan_variance_ros2
+[36.480s] Invoking command in '/home/student/sensor_platform_ws/build/allan_variance_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/allan_variance_ros2 -- -j8 -l8
+[36.598s] [  1%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/ImuMeasurement.cpp.o[0m
+[36.599s] [  1%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/yaml_parsers.cpp.o[0m
+[36.599s] [  2%] [34m[1mCreating directories for 'arrow_cpp'[0m
+[36.599s] [  2%] [32mBuilding CXX object CMakeFiles/allan_variance_ros2.dir/src/AllanVarianceComputor.cpp.o[0m
+[36.756s] [  2%] [34m[1mPerforming download step (download, verify and extract) for 'arrow_cpp'[0m
+[36.775s] -- Downloading...
+[36.775s]    dst='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/apache-arrow-18.0.0.tar.gz'
+[36.775s]    timeout='none'
+[36.775s]    inactivity timeout='none'
+[36.775s] -- Using src='https://github.com/apache/arrow/releases/download/apache-arrow-18.0.0/apache-arrow-18.0.0.tar.gz'
+[37.666s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/ImuMeasurement.cpp:[m[K In constructor ‘[01m[KImuMeasurement::ImuMeasurement(uint64_t, const Vector3d&, const Vector3d&)[m[K’:
+[37.666s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/ImuMeasurement.cpp:12:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_I_a_WI[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[37.666s]    12 |                                [01;35m[Kconst Eigen::Vector3d& _I_a_WI[m[K,
+[37.666s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[37.666s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/ImuMeasurement.cpp:13:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_I_w_WI[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[37.666s]    13 |                                [01;35m[Kconst Eigen::Vector3d& _I_w_WI[m[K){
+[37.666s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[41.516s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In constructor ‘[01m[Kallan_variance_ros::AllanVarianceComputor::AllanVarianceComputor(rclcpp::Node*, std::string, std::string)[m[K’:
+[41.516s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:6:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[41.517s]     6 | AllanVarianceComputor::AllanVarianceComputor([01;35m[Krclcpp::Node* nh[m[K, std::string config_file, std::string output_path)
+[41.517s]       |                                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[41.524s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In member function ‘[01m[Kvoid allan_variance_ros::AllanVarianceComputor::run(std::string)[m[K’:
+[41.524s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:61:21:[m[K [01;35m[Kwarning: [m[Kloop variable ‘[01m[Kavailable_topic[m[K’ creates a copy from type ‘[01m[Kconst rosbag2_storage::TopicMetadata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct-Wrange-loop-construct]8;;[m[K]
+[41.524s]    61 |     for (const auto [01;35m[Kavailable_topic[m[K : available_topics)
+[41.524s]       |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[41.524s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:61:21:[m[K [01;36m[Knote: [m[Kuse reference type to prevent copying
+[41.524s]    61 |     for (const auto [01;36m[Kavailable_topic[m[K : available_topics)
+[41.524s]       |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[41.524s]       |                     [32m[K&[m[K
+[41.531s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:36:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kimu_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[41.531s]    36 |   int [01;35m[Kimu_counter[m[K = 0;
+[41.531s]       |       [01;35m[K^~~~~~~~~~~[m[K
+[42.955s] [  3%] [32m[1mLinking CXX shared library liballan_variance_ros2.so[0m
+[43.331s] [  3%] Built target allan_variance_ros2
+[43.351s] [  3%] [32mBuilding CXX object CMakeFiles/allan_variance.dir/src/allan_variance.cpp.o[0m
+[47.691s] -- verifying file...
+[47.691s]        file='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/apache-arrow-18.0.0.tar.gz'
+[47.730s] -- Downloading... done
+[47.743s] -- extracting...
+[47.743s]      src='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/apache-arrow-18.0.0.tar.gz'
+[47.743s]      dst='/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp'
+[47.743s] -- extracting... [tar xfz]
+[48.156s] -- extracting... [analysis]
+[48.160s] -- extracting... [rename]
+[48.160s] -- extracting... [clean up]
+[48.160s] -- extracting... done
+[48.176s] [  3%] [34m[1mNo update step for 'arrow_cpp'[0m
+[48.200s] [  3%] [34m[1mPerforming patch step for 'arrow_cpp'[0m
+[48.268s] [  4%] [34m[1mPerforming configure step for 'arrow_cpp'[0m
+[48.933s] [  4%] [32m[1mLinking CXX executable allan_variance[0m
+[49.069s] [  4%] Built target allan_variance
+[50.028s] -- arrow_cpp configure command succeeded.  See also /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-stamp/arrow_cpp-configure-*.log
+[50.040s] [  4%] [34m[1mPerforming build step for 'arrow_cpp'[0m
+[135.507s] -- arrow_cpp build command succeeded.  See also /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-stamp/arrow_cpp-build-*.log
+[135.534s] [  4%] [34m[1mPerforming install step for 'arrow_cpp'[0m
+[135.768s] -- arrow_cpp install command succeeded.  See also /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-build/arrow/src/arrow_cpp-stamp/arrow_cpp-install-*.log
+[135.779s] [  4%] [34m[1mCompleted 'arrow_cpp'[0m
+[135.801s] [  4%] Built target arrow_cpp
+[135.823s] [  5%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/arrows2d_ext.cpp.o[0m
+[135.823s] [  5%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/arrows2d.cpp.o[0m
+[135.823s] [  6%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/arrows3d.cpp.o[0m
+[135.823s] [  5%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/annotation_context.cpp.o[0m
+[136.222s] [  6%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/asset_video.cpp.o[0m
+[136.408s] [  6%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/asset_video_ext.cpp.o[0m
+[136.465s] [  7%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/bar_chart.cpp.o[0m
+[136.485s] [  7%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/bar_chart_ext.cpp.o[0m
+[136.965s] [  8%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/asset3d_ext.cpp.o[0m
+[136.965s] [  8%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/boxes2d.cpp.o[0m
+[136.970s] [  9%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/boxes2d_ext.cpp.o[0m
+[137.179s] [  9%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/boxes3d.cpp.o[0m
+[137.496s] [  9%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/boxes3d_ext.cpp.o[0m
+[137.525s] [ 10%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/capsules3d.cpp.o[0m
+[137.607s] [ 10%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/asset3d.cpp.o[0m
+[137.607s] [ 10%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/capsules3d_ext.cpp.o[0m
+[137.607s] [ 10%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/arrows3d_ext.cpp.o[0m
+[137.625s] [ 11%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/clear.cpp.o[0m
+[137.640s] [ 11%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/clear_ext.cpp.o[0m
+[137.880s] [ 11%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/coordinate_frame.cpp.o[0m
+[138.025s] [ 12%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/cylinders3d.cpp.o[0m
+[138.060s] [ 12%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/cylinders3d_ext.cpp.o[0m
+[138.061s] [ 12%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/depth_image.cpp.o[0m
+[138.079s] [ 13%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/depth_image_ext.cpp.o[0m
+[138.096s] [ 13%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/ellipses2d.cpp.o[0m
+[138.195s] [ 13%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/ellipses2d_ext.cpp.o[0m
+[138.275s] [ 14%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/ellipsoids3d.cpp.o[0m
+[138.440s] [ 14%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/ellipsoids3d_ext.cpp.o[0m
+[138.440s] [ 14%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/encoded_depth_image.cpp.o[0m
+[138.618s] [ 14%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/encoded_image_ext.cpp.o[0m
+[138.618s] [ 15%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/encoded_image.cpp.o[0m
+[138.770s] [ 16%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/geo_line_strings.cpp.o[0m
+[138.789s] [ 16%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/geo_points.cpp.o[0m
+[138.799s] [ 16%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/geo_points_ext.cpp.o[0m
+[139.021s] [ 17%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/graph_edges.cpp.o[0m
+[139.030s] [ 17%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/graph_nodes.cpp.o[0m
+[139.204s] [ 17%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/grid_map.cpp.o[0m
+[139.399s] [ 18%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/image.cpp.o[0m
+[139.415s] [ 18%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/image_ext.cpp.o[0m
+[139.416s] [ 18%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/instance_poses3d.cpp.o[0m
+[139.432s] [ 19%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/line_strips2d.cpp.o[0m
+[139.433s] [ 19%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/line_strips3d.cpp.o[0m
+[139.486s] [ 19%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/mcap_channel.cpp.o[0m
+[139.614s] [ 20%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/mcap_message.cpp.o[0m
+[139.709s] [ 20%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/mcap_schema.cpp.o[0m
+[140.010s] [ 20%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/mcap_statistics.cpp.o[0m
+[140.060s] [ 21%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/mesh3d.cpp.o[0m
+[140.094s] [ 21%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/pinhole.cpp.o[0m
+[140.113s] [ 22%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/pinhole_ext.cpp.o[0m
+[140.131s] [ 22%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/points2d.cpp.o[0m
+[140.142s] [ 22%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/points3d.cpp.o[0m
+[140.197s] [ 23%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/recording_info.cpp.o[0m
+[140.354s] [ 23%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/scalars.cpp.o[0m
+[140.664s] [ 23%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/segmentation_image.cpp.o[0m
+[140.722s] [ 24%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/segmentation_image_ext.cpp.o[0m
+[140.737s] [ 24%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/series_lines.cpp.o[0m
+[140.780s] [ 24%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/series_lines_ext.cpp.o[0m
+[140.797s] [ 25%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/series_points.cpp.o[0m
+[140.846s] [ 25%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/series_points_ext.cpp.o[0m
+[140.847s] [ 25%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/state_change.cpp.o[0m
+[140.850s] [ 26%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/state_configuration.cpp.o[0m
+[140.863s] [ 26%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/tensor.cpp.o[0m
+[140.928s] [ 27%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/tensor_ext.cpp.o[0m
+[140.929s] [ 27%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/text_document.cpp.o[0m
+[141.346s] [ 27%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/text_log.cpp.o[0m
+[141.395s] [ 28%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/transform3d.cpp.o[0m
+[141.417s] [ 28%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/transform3d_ext.cpp.o[0m
+[141.438s] [ 28%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/transform_axes3d.cpp.o[0m
+[141.456s] [ 29%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/video_frame_reference.cpp.o[0m
+[141.662s] [ 29%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/video_stream.cpp.o[0m
+[141.732s] [ 29%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/view_coordinates.cpp.o[0m
+[141.973s] [ 30%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/archetypes/view_coordinates_ext.cpp.o[0m
+[141.976s] [ 30%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/active_visualizers.cpp.o[0m
+[142.031s] [ 30%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/background.cpp.o[0m
+[142.120s] [ 31%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/container_blueprint.cpp.o[0m
+[142.153s] [ 31%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/dataframe_query.cpp.o[0m
+[142.308s] [ 31%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/entity_behavior.cpp.o[0m
+[142.348s] [ 32%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/eye_controls3d.cpp.o[0m
+[142.437s] [ 32%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/force_center.cpp.o[0m
+[142.548s] [ 33%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/force_collision_radius.cpp.o[0m
+[142.621s] [ 33%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/force_link.cpp.o[0m
+[142.640s] [ 33%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/force_many_body.cpp.o[0m
+[142.837s] [ 34%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/force_position.cpp.o[0m
+[142.905s] [ 34%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/graph_background.cpp.o[0m
+[142.916s] [ 34%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/line_grid3d.cpp.o[0m
+[143.034s] [ 35%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/map_background.cpp.o[0m
+[143.062s] [ 35%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/map_zoom.cpp.o[0m
+[143.166s] [ 35%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/near_clip_plane.cpp.o[0m
+[143.224s] [ 36%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/panel_blueprint.cpp.o[0m
+[143.229s] [ 36%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/plot_background.cpp.o[0m
+[143.439s] [ 36%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/plot_legend.cpp.o[0m
+[143.484s] [ 37%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/scalar_axis.cpp.o[0m
+[143.577s] [ 37%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/spatial_information.cpp.o[0m
+[143.613s] [ 38%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/table_blueprint.cpp.o[0m
+[143.638s] [ 38%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/tensor_scalar_mapping.cpp.o[0m
+[143.738s] [ 38%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/tensor_slice_selection.cpp.o[0m
+[143.778s] [ 39%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/tensor_view_fit.cpp.o[0m
+[143.828s] [ 39%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/text_document_format.cpp.o[0m
+[144.017s] [ 39%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/text_log_columns.cpp.o[0m
+[144.079s] [ 40%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/text_log_format.cpp.o[0m
+[144.187s] [ 40%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/text_log_rows.cpp.o[0m
+[144.214s] [ 40%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/time_axis.cpp.o[0m
+[144.267s] [ 41%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/time_panel_blueprint.cpp.o[0m
+[144.346s] [ 41%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/view_blueprint.cpp.o[0m
+[144.397s] [ 41%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/view_contents.cpp.o[0m
+[144.422s] [ 42%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/viewport_blueprint.cpp.o[0m
+[144.639s] [ 42%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/visible_time_ranges.cpp.o[0m
+[144.706s] [ 42%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/visual_bounds2d.cpp.o[0m
+[144.836s] [ 43%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/archetypes/visualizer_instruction.cpp.o[0m
+[144.895s] [ 43%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/background_kind.cpp.o[0m
+[145.024s] [ 44%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/column_order.cpp.o[0m
+[145.051s] [ 44%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/container_kind.cpp.o[0m
+[145.053s] [ 44%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/corner2d.cpp.o[0m
+[145.149s] [ 45%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/eye3d_kind.cpp.o[0m
+[145.258s] [ 45%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/link_axis.cpp.o[0m
+[145.331s] [ 45%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/loop_mode.cpp.o[0m
+[145.522s] [ 46%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/map_provider.cpp.o[0m
+[146.392s] [ 46%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/panel_state.cpp.o[0m
+[146.520s] [ 46%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/play_state.cpp.o[0m
+[146.558s] [ 47%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/components/view_fit.cpp.o[0m
+[146.565s] [ 47%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/component_column_selector.cpp.o[0m
+[146.626s] [ 47%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/component_source_kind.cpp.o[0m
+[146.764s] [ 48%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/filter_by_range.cpp.o[0m
+[146.859s] [ 48%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/filter_is_not_null.cpp.o[0m
+[147.064s] [ 49%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/selected_columns.cpp.o[0m
+[147.872s] [ 49%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/tensor_dimension_index_slider.cpp.o[0m
+[147.986s] [ 49%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/text_log_column.cpp.o[0m
+[148.036s] [ 50%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/text_log_column_kind.cpp.o[0m
+[148.095s] [ 50%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/timeline_column.cpp.o[0m
+[148.107s] [ 50%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/blueprint/datatypes/visualizer_component_mapping.cpp.o[0m
+[148.242s] [ 51%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/component_batch.cpp.o[0m
+[148.376s] [ 51%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/component_column.cpp.o[0m
+[148.652s] [ 51%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/component_type.cpp.o[0m
+[149.165s] [ 52%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/component_type_registry.cpp.o[0m
+[149.242s] [ 52%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/aggregation_policy.cpp.o[0m
+[149.385s] [ 52%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/annotation_context.cpp.o[0m
+[149.475s] [ 53%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/annotation_context_ext.cpp.o[0m
+[149.493s] [ 53%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/channel_message_counts.cpp.o[0m
+[149.518s] [ 53%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/color_ext.cpp.o[0m
+[149.637s] [ 54%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/colormap.cpp.o[0m
+[149.649s] [ 54%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/entity_path_ext.cpp.o[0m
+[149.668s] [ 55%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/fill_mode.cpp.o[0m
+[149.727s] [ 55%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/geo_line_string.cpp.o[0m
+[149.760s] [ 55%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/geo_line_string_ext.cpp.o[0m
+[149.920s] [ 56%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/graph_edge_ext.cpp.o[0m
+[149.940s] [ 56%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/graph_node_ext.cpp.o[0m
+[149.957s] [ 56%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/graph_type.cpp.o[0m
+[150.151s] [ 57%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/half_size2d_ext.cpp.o[0m
+[150.389s] [ 57%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/half_size3d_ext.cpp.o[0m
+[150.630s] [ 57%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/image_buffer_ext.cpp.o[0m
+[150.710s] [ 58%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/image_format_ext.cpp.o[0m
+[150.727s] [ 58%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/interpolation_mode.cpp.o[0m
+[151.000s] [ 58%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/key_value_pairs.cpp.o[0m
+[151.008s] [ 59%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/lat_lon_ext.cpp.o[0m
+[151.027s] [ 59%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/line_strip2d.cpp.o[0m
+[151.155s] [ 59%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/line_strip3d.cpp.o[0m
+[151.210s] [ 60%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/magnification_filter.cpp.o[0m
+[151.233s] [ 60%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/marker_shape.cpp.o[0m
+[151.255s] [ 61%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/media_type_ext.cpp.o[0m
+[151.429s] [ 61%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/mesh_face_rendering.cpp.o[0m
+[151.913s] [ 61%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/name_ext.cpp.o[0m
+[152.156s] [ 62%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/pinhole_projection_ext.cpp.o[0m
+[152.188s] [ 62%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/position2d_ext.cpp.o[0m
+[152.393s] [ 62%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/position3d_ext.cpp.o[0m
+[152.421s] [ 63%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/radius_ext.cpp.o[0m
+[152.439s] [ 63%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/resolution_ext.cpp.o[0m
+[152.508s] [ 63%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/scale3d_ext.cpp.o[0m
+[152.525s] [ 64%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/tensor_data_ext.cpp.o[0m
+[152.548s] [ 64%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/texcoord2d_ext.cpp.o[0m
+[152.633s] [ 64%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/text_ext.cpp.o[0m
+[152.677s] [ 65%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/text_log_level_ext.cpp.o[0m
+[152.682s] [ 65%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/transform_frame_id_ext.cpp.o[0m
+[152.701s] [ 66%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/transform_mat3x3_ext.cpp.o[0m
+[152.714s] [ 66%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/transform_relation.cpp.o[0m
+[152.722s] [ 66%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/translation3d_ext.cpp.o[0m
+[152.724s] [ 67%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/triangle_indices_ext.cpp.o[0m
+[152.739s] [ 67%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/vector2d_ext.cpp.o[0m
+[152.793s] [ 67%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/vector3d_ext.cpp.o[0m
+[152.887s] [ 68%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/video_codec.cpp.o[0m
+[152.890s] [ 68%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/video_timestamp_ext.cpp.o[0m
+[152.907s] [ 68%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/components/view_coordinates_ext.cpp.o[0m
+[152.928s] [ 69%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/config.cpp.o[0m
+[152.960s] [ 69%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/absolute_time_range.cpp.o[0m
+[152.978s] [ 69%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/angle.cpp.o[0m
+[152.985s] [ 70%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/angle_ext.cpp.o[0m
+[153.034s] [ 70%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/annotation_info.cpp.o[0m
+[153.069s] [ 70%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/annotation_info_ext.cpp.o[0m
+[153.142s] [ 71%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/blob.cpp.o[0m
+[153.212s] [ 71%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/blob_ext.cpp.o[0m
+[153.339s] [ 72%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/bool.cpp.o[0m
+[153.588s] [ 72%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/channel_count_pair.cpp.o[0m
+[154.224s] [ 72%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/channel_datatype.cpp.o[0m
+[154.359s] [ 73%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/class_description.cpp.o[0m
+[154.461s] [ 73%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/class_description_ext.cpp.o[0m
+[154.467s] [ 73%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/class_description_map_elem.cpp.o[0m
+[154.584s] [ 74%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/class_description_map_elem_ext.cpp.o[0m
+[154.649s] [ 74%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/class_id.cpp.o[0m
+[154.823s] [ 74%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/color_model.cpp.o[0m
+[154.913s] [ 75%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/dvec2d.cpp.o[0m
+[155.024s] [ 75%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/dvec2d_ext.cpp.o[0m
+[155.066s] [ 75%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/entity_path.cpp.o[0m
+[155.272s] [ 76%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/float32.cpp.o[0m
+[155.780s] [ 76%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/float64.cpp.o[0m
+[155.954s] [ 77%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/image_format.cpp.o[0m
+[156.019s] [ 77%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/image_format_ext.cpp.o[0m
+[156.147s] [ 77%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/keypoint_id.cpp.o[0m
+[156.280s] [ 78%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/keypoint_pair.cpp.o[0m
+[156.311s] [ 78%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/keypoint_pair_ext.cpp.o[0m
+[156.415s] [ 78%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/mat3x3.cpp.o[0m
+[156.549s] [ 79%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/mat3x3_ext.cpp.o[0m
+[156.577s] [ 79%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/mat4x4.cpp.o[0m
+[156.753s] [ 79%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/mat4x4_ext.cpp.o[0m
+[156.796s] [ 80%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/pixel_format.cpp.o[0m
+[156.993s] [ 80%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/plane3d.cpp.o[0m
+[157.289s] [ 80%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/quaternion.cpp.o[0m
+[157.600s] [ 81%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/quaternion_ext.cpp.o[0m
+[157.698s] [ 81%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/range1d.cpp.o[0m
+[157.787s] [ 81%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/range2d.cpp.o[0m
+[157.863s] [ 82%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/rgba32.cpp.o[0m
+[157.945s] [ 82%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/rgba32_ext.cpp.o[0m
+[158.053s] [ 83%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/rotation_axis_angle.cpp.o[0m
+[158.190s] [ 83%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/rotation_axis_angle_ext.cpp.o[0m
+[158.292s] [ 83%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/tensor_buffer.cpp.o[0m
+[158.432s] [ 84%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/tensor_buffer_ext.cpp.o[0m
+[158.479s] [ 84%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/tensor_data.cpp.o[0m
+[158.873s] [ 84%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/tensor_data_ext.cpp.o[0m
+[158.975s] [ 85%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/tensor_dimension_index_selection.cpp.o[0m
+[159.219s] [ 85%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/tensor_dimension_selection.cpp.o[0m
+[159.286s] [ 85%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/time_int.cpp.o[0m
+[159.387s] [ 86%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/time_range.cpp.o[0m
+[159.407s] [ 86%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/time_range_boundary.cpp.o[0m
+[159.574s] [ 86%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uint16.cpp.o[0m
+[160.130s] [ 87%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uint32.cpp.o[0m
+[160.211s] [ 87%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uint64.cpp.o[0m
+[160.726s] [ 88%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/utf8.cpp.o[0m
+[160.857s] [ 88%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/utf8_ext.cpp.o[0m
+[160.918s] [ 88%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/utf8pair.cpp.o[0m
+[161.098s] [ 88%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uuid.cpp.o[0m
+[161.099s] [ 89%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/utf8pair_ext.cpp.o[0m
+[161.128s] [ 89%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uvec2d.cpp.o[0m
+[161.196s] [ 90%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uvec2d_ext.cpp.o[0m
+[161.337s] [ 90%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uvec3d.cpp.o[0m
+[161.420s] [ 90%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uvec3d_ext.cpp.o[0m
+[161.634s] [ 91%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/uvec4d.cpp.o[0m
+[161.650s] [ 91%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/vec2d.cpp.o[0m
+[161.746s] [ 91%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/vec2d_ext.cpp.o[0m
+[161.975s] [ 92%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/vec3d.cpp.o[0m
+[162.305s] [ 92%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/vec3d_ext.cpp.o[0m
+[162.488s] [ 92%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/vec4d.cpp.o[0m
+[162.537s] [ 93%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/vec4d_ext.cpp.o[0m
+[162.645s] [ 93%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/video_timestamp.cpp.o[0m
+[162.689s] [ 94%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/view_coordinates.cpp.o[0m
+[163.996s] [ 94%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/recording_stream.cpp.o[0m
+[165.894s] [ 94%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/sdk_info.cpp.o[0m
+[166.038s] [ 95%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/spawn.cpp.o[0m
+[166.184s] [ 95%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/spawn_options.cpp.o[0m
+[166.327s] [ 95%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/string_utils.cpp.o[0m
+[166.470s] [ 96%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/time_column.cpp.o[0m
+[167.327s] [ 96%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/timeline.cpp.o[0m
+[167.477s] [ 97%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/log_sink.cpp.o[0m
+[167.628s] [ 97%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/error.cpp.o[0m
+[167.973s] [ 98%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/entity_path.cpp.o[0m
+[167.973s] [ 98%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/demo_utils.cpp.o[0m
+[168.157s] [ 98%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/visible_time_range.cpp.o[0m
+[168.365s] [ 98%] [32mBuilding CXX object _deps/rerun_sdk-build/CMakeFiles/rerun_sdk.dir/src/rerun/datatypes/view_coordinates_ext.cpp.o[0m
+[169.290s] [ 99%] [32m[1mLinking CXX static library librerun_sdk.a[0m
+[170.191s] [ 99%] Built target rerun_sdk
+[170.216s] [100%] [32mBuilding CXX object CMakeFiles/plot_imu.dir/src/plot_imu.cpp.o[0m
+[172.660s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:[m[K In function ‘[01m[Kvoid plot_imu(std::string, std::string)[m[K’:
+[172.660s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:33:21:[m[K [01;35m[Kwarning: [m[Kloop variable ‘[01m[Kavailable_topic[m[K’ creates a copy from type ‘[01m[Kconst rosbag2_storage::TopicMetadata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct-Wrange-loop-construct]8;;[m[K]
+[172.660s]    33 |     for (const auto [01;35m[Kavailable_topic[m[K : available_topics)
+[172.660s]       |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[172.660s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:33:21:[m[K [01;36m[Knote: [m[Kuse reference type to prevent copying
+[172.660s]    33 |     for (const auto [01;36m[Kavailable_topic[m[K : available_topics)
+[172.660s]       |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[172.660s]       |                     [32m[K&[m[K
+[172.663s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:71:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rerun::RecordingStream::set_time_nanos(std::string_view, int64_t) const[m[K’ is deprecated: Use either `set_time_duration_nanos` or `set_time_timestamp_nanos_since_epoch` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[172.663s]    71 |       [01;35m[Krec.set_time_nanos("header_timestamp", (int64_t)tCurrNanoSeconds_)[m[K;
+[172.664s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[172.664s] In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+[172.664s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+[172.664s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[172.664s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:412:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[172.664s]   412 |             [01;36m[Kset_time_nanos[m[K(std::string_view timeline_name, int64_t nanos) const {
+[172.664s]       |             [01;36m[K^~~~~~~~~~~~~~[m[K
+[172.664s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:72:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rerun::RecordingStream::set_time_nanos(std::string_view, int64_t) const[m[K’ is deprecated: Use either `set_time_duration_nanos` or `set_time_timestamp_nanos_since_epoch` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[172.664s]    72 |       [01;35m[Krec.set_time_nanos("received_timestamp", msg->time_stamp)[m[K;
+[172.664s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[172.664s] In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+[172.664s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+[172.664s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[172.664s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:412:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[172.664s]   412 |             [01;36m[Kset_time_nanos[m[K(std::string_view timeline_name, int64_t nanos) const {
+[172.664s]       |             [01;36m[K^~~~~~~~~~~~~~[m[K
+[172.665s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:75:44:[m[K [01;35m[Kwarning: [m[Kignoring returned value of type ‘[01m[Krerun::Error[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[172.665s]    75 |     rec.save((std::string)"rerun_file.rrd")[01;35m[K;[m[K
+[172.665s]       |                                            [01;35m[K^[m[K
+[172.665s] In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[172.665s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:218:15:[m[K [01;36m[Knote: [m[Kin call to ‘[01m[Krerun::Error rerun::RecordingStream::save(std::string_view) const[m[K’, declared here
+[172.665s]   218 |         Error [01;36m[Ksave[m[K(std::string_view path) const;
+[172.665s]       |               [01;36m[K^~~~[m[K
+[172.665s] In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../result.hpp:6[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../component_type.hpp:6[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../component_batch.hpp:9[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/annotation_context.hpp:7[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes.hpp:5[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:4[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+[172.665s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[172.665s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../error.hpp:103:25:[m[K [01;36m[Knote: [m[K‘[01m[Krerun::Error[m[K’ declared here
+[172.665s]   103 |     class [[nodiscard]] [01;36m[KError[m[K {
+[172.665s]       |                         [01;36m[K^~~~~[m[K
+[173.316s] In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:12[m[K,
+[173.316s]                  from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+[173.316s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+[173.316s]                  from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[173.316s] /home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/as_components.hpp: In instantiation of ‘[01m[Kstruct rerun::AsComponents<rerun::components::Scalar>[m[K’:
+[173.316s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:601:25:[m[K   required from ‘[01m[Krerun::Error rerun::RecordingStream::try_log_with_static(std::string_view, bool, const Ts& ...) const [with Ts = {rerun::components::Scalar}; std::string_view = std::basic_string_view<char>][m[K’
+[173.316s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:482:32:[m[K   required from ‘[01m[Kvoid rerun::RecordingStream::log(std::string_view, const Ts& ...) const [with Ts = {rerun::components::Scalar}; std::string_view = std::basic_string_view<char>][m[K’
+[173.316s] [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:73:14:[m[K   required from here
+[173.316s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/as_components.hpp:22:35:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: AsComponents is not implemented for this type. It is implemented for all built-in archetypes as well as invidiual & collections of `rerun::ComponentBatch`.You can add your own implementation by specializing AsComponents<T> for your type T.
+[173.316s]    22 |             NoAsComponentsFor<T>::[01;31m[Kvalue[m[K,
+[173.316s]       |                                   [01;31m[K^~~~~[m[K
+[173.316s] [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/as_components.hpp:22:35:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::integral_constant<bool, false>::value[m[K’ evaluates to false
+[173.855s] gmake[2]: *** [CMakeFiles/plot_imu.dir/build.make:76: CMakeFiles/plot_imu.dir/src/plot_imu.cpp.o] Error 1
+[173.855s] gmake[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/plot_imu.dir/all] Error 2
+[173.855s] gmake: *** [Makefile:146: all] Error 2
+[173.857s] Invoked command in '/home/student/sensor_platform_ws/build/allan_variance_ros2' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/allan_variance_ros2 -- -j8 -l8

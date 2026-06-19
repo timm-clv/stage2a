@@ -1,0 +1,1 @@
+[0.018s] Invoking command in '/home/student/sensor_platform_ws/build/platform_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/sensor_platform_ws/build/platform_interfaces -- -j8 -l8

@@ -1,0 +1,84 @@
+[0mCompiler: GNU 11.4.0 (/usr/bin/c++)[0m
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/ImuMeasurement.cpp:[m[K In constructor ‘[01m[KImuMeasurement::ImuMeasurement(uint64_t, const Vector3d&, const Vector3d&)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/ImuMeasurement.cpp:12:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_I_a_WI[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   12 |                                [01;35m[Kconst Eigen::Vector3d& _I_a_WI[m[K,
+      |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/ImuMeasurement.cpp:13:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_I_w_WI[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   13 |                                [01;35m[Kconst Eigen::Vector3d& _I_w_WI[m[K){
+      |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In constructor ‘[01m[Kallan_variance_ros::AllanVarianceComputor::AllanVarianceComputor(rclcpp::Node*, std::string, std::string)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:6:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    6 | AllanVarianceComputor::AllanVarianceComputor([01;35m[Krclcpp::Node* nh[m[K, std::string config_file, std::string output_path)
+      |                                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:[m[K In member function ‘[01m[Kvoid allan_variance_ros::AllanVarianceComputor::run(std::string)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:61:21:[m[K [01;35m[Kwarning: [m[Kloop variable ‘[01m[Kavailable_topic[m[K’ creates a copy from type ‘[01m[Kconst rosbag2_storage::TopicMetadata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct-Wrange-loop-construct]8;;[m[K]
+   61 |     for (const auto [01;35m[Kavailable_topic[m[K : available_topics)
+      |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:61:21:[m[K [01;36m[Knote: [m[Kuse reference type to prevent copying
+   61 |     for (const auto [01;36m[Kavailable_topic[m[K : available_topics)
+      |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+      |                     [32m[K&[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/AllanVarianceComputor.cpp:36:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kimu_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   36 |   int [01;35m[Kimu_counter[m[K = 0;
+      |       [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:[m[K In function ‘[01m[Kvoid plot_imu(std::string, std::string)[m[K’:
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:33:21:[m[K [01;35m[Kwarning: [m[Kloop variable ‘[01m[Kavailable_topic[m[K’ creates a copy from type ‘[01m[Kconst rosbag2_storage::TopicMetadata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrange-loop-construct-Wrange-loop-construct]8;;[m[K]
+   33 |     for (const auto [01;35m[Kavailable_topic[m[K : available_topics)
+      |                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:33:21:[m[K [01;36m[Knote: [m[Kuse reference type to prevent copying
+   33 |     for (const auto [01;36m[Kavailable_topic[m[K : available_topics)
+      |                     [01;36m[K^~~~~~~~~~~~~~~[m[K
+      |                     [32m[K&[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:71:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rerun::RecordingStream::set_time_nanos(std::string_view, int64_t) const[m[K’ is deprecated: Use either `set_time_duration_nanos` or `set_time_timestamp_nanos_since_epoch` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   71 |       [01;35m[Krec.set_time_nanos("header_timestamp", (int64_t)tCurrNanoSeconds_)[m[K;
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:412:13:[m[K [01;36m[Knote: [m[Kdeclared here
+  412 |             [01;36m[Kset_time_nanos[m[K(std::string_view timeline_name, int64_t nanos) const {
+      |             [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:72:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rerun::RecordingStream::set_time_nanos(std::string_view, int64_t) const[m[K’ is deprecated: Use either `set_time_duration_nanos` or `set_time_timestamp_nanos_since_epoch` [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   72 |       [01;35m[Krec.set_time_nanos("received_timestamp", msg->time_stamp)[m[K;
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:412:13:[m[K [01;36m[Knote: [m[Kdeclared here
+  412 |             [01;36m[Kset_time_nanos[m[K(std::string_view timeline_name, int64_t nanos) const {
+      |             [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:75:44:[m[K [01;35m[Kwarning: [m[Kignoring returned value of type ‘[01m[Krerun::Error[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+   75 |     rec.save((std::string)"rerun_file.rrd")[01;35m[K;[m[K
+      |                                            [01;35m[K^[m[K
+In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:218:15:[m[K [01;36m[Knote: [m[Kin call to ‘[01m[Krerun::Error rerun::RecordingStream::save(std::string_view) const[m[K’, declared here
+  218 |         Error [01;36m[Ksave[m[K(std::string_view path) const;
+      |               [01;36m[K^~~~[m[K
+In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../result.hpp:6[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../component_type.hpp:6[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../component_batch.hpp:9[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/annotation_context.hpp:7[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes.hpp:5[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:4[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/archetypes/../error.hpp:103:25:[m[K [01;36m[Knote: [m[K‘[01m[Krerun::Error[m[K’ declared here
+  103 |     class [[nodiscard]] [01;36m[KError[m[K {
+      |                         [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:12[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun.hpp:17[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/include/allan_variance_ros2/plot_imu.hpp:8[m[K,
+                 from [01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:2[m[K:
+/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/as_components.hpp: In instantiation of ‘[01m[Kstruct rerun::AsComponents<rerun::components::Scalar>[m[K’:
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:601:25:[m[K   required from ‘[01m[Krerun::Error rerun::RecordingStream::try_log_with_static(std::string_view, bool, const Ts& ...) const [with Ts = {rerun::components::Scalar}; std::string_view = std::basic_string_view<char>][m[K’
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/recording_stream.hpp:482:32:[m[K   required from ‘[01m[Kvoid rerun::RecordingStream::log(std::string_view, const Ts& ...) const [with Ts = {rerun::components::Scalar}; std::string_view = std::basic_string_view<char>][m[K’
+[01m[K/home/student/sensor_platform_ws/src/allan_variance_ros2/src/allan_variance_ros2/src/plot_imu.cpp:73:14:[m[K   required from here
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/as_components.hpp:22:35:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: AsComponents is not implemented for this type. It is implemented for all built-in archetypes as well as invidiual & collections of `rerun::ComponentBatch`.You can add your own implementation by specializing AsComponents<T> for your type T.
+   22 |             NoAsComponentsFor<T>::[01;31m[Kvalue[m[K,
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/student/sensor_platform_ws/build/allan_variance_ros2/_deps/rerun_sdk-src/src/rerun/as_components.hpp:22:35:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::integral_constant<bool, false>::value[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/plot_imu.dir/build.make:76: CMakeFiles/plot_imu.dir/src/plot_imu.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/plot_imu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
